@@ -1,0 +1,21 @@
+{
+  "_comment": "Tasks pulled from Linear (and Notion once shared with the connector). Refreshed by a Cowork scheduled task. status groups: unstarted=To do, started=In progress, completed=Done.",
+  "updated": "2026-06-17T12:20:00Z",
+  "sources": {
+    "linear": { "ok": true, "workspace": "Temodeart" },
+    "notion": { "ok": false, "note": "Connector lacks access to the work page. Share it with the Notion connection to enable." }
+  },
+  "tasks": [
+    { "source": "linear", "id": "TEM-54", "title": "Review the leftover design works and create issues accordingly", "project": "CarMax Platform", "statusType": "unstarted", "status": "Todo", "priority": "Urgent", "due": null, "url": "https://linear.app/temodeart/issue/TEM-54" },
+    { "source": "linear", "id": "TEM-49", "title": "Payment flow version prototype for discussion & to decide", "project": "CarMax Platform", "statusType": "unstarted", "status": "Todo", "priority": "Medium", "due": "2026-05-11", "url": "https://linear.app/temodeart/issue/TEM-49" },
+    { "source": "linear", "id": "TEM-29", "title": "Make tutorial video", "project": "Mongol Alt", "statusType": "unstarted", "status": "Todo", "priority": "Urgent", "due": "2023-09-26", "url": "https://linear.app/temodeart/issue/TEM-29" },
+    { "source": "linear", "id": "TEM-51", "title": "Home Screen App Version", "project": "CarMax Platform", "statusType": "started", "status": "In Progress", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-51" },
+    { "source": "linear", "id": "TEM-53", "title": "Car Detail Page Responsive", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "Urgent", "due": null, "url": "https://linear.app/temodeart/issue/TEM-53" },
+    { "source": "linear", "id": "TEM-52", "title": "Car List Screen Responsive", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-52" },
+    { "source": "linear", "id": "TEM-50", "title": "Home Screen Responsive", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-50" },
+    { "source": "linear", "id": "TEM-48", "title": "Modals and Popups", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-48" },
+    { "source": "linear", "id": "TEM-47", "title": "Car Detail Page Design", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-47" },
+    { "source": "linear", "id": "TEM-46", "title": "Car List Screen Design", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-46" },
+    { "source": "linear", "id": "TEM-45", "title": "Home Screen Design", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-45" }
+  ]
+}

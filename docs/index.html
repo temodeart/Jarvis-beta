@@ -55,8 +55,14 @@ canvas{max-height:220px}
   <div class="card kpi" id="kpis"></div>
 
   <div class="section"><div class="card">
-    <h2>Task board — across all projects</h2>
+    <h2>Task board — Jarvis ops</h2>
     <div class="board" id="board"></div>
+  </div></div>
+
+  <div class="section"><div class="card">
+    <h2>My tasks — Linear &amp; Notion</h2>
+    <div id="extsrc" class="note" style="margin-bottom:8px"></div>
+    <div class="board" id="extboard"></div>
   </div></div>
 
   <div class="section"><div class="card"><h2>Projects</h2><div class="cols" id="projects"></div></div></div>
@@ -98,6 +104,29 @@ function renderTasks(tasks){
   });
   return tasks.filter(t=>t.status==='needs_me').length;
 }
+
+// ---- Linear / Notion external tasks ----
+const EXT=[{key:'unstarted',label:'To do',dot:'needs'},{key:'started',label:'In progress',dot:'prog'},{key:'completed',label:'Done',dot:'done'}];
+fetch('./external-tasks.json?_='+Date.now()).then(r=>r.json()).then(x=>{
+  const s=x.sources||{}, l=s.linear||{}, n=s.notion||{};
+  document.getElementById('extsrc').innerHTML =
+    `Linear: ${l.ok?'✓ '+esc(l.workspace||''):'—'} &nbsp;·&nbsp; Notion: ${n.ok?'✓':'⚠ '+esc(n.note||'not connected')}`;
+  const board=document.getElementById('extboard'); board.innerHTML='';
+  EXT.forEach(st=>{
+    const items=(x.tasks||[]).filter(t=>t.statusType===st.key);
+    const col=document.createElement('div'); if(st.key==='completed') col.className='done';
+    col.innerHTML=`<div class="colhead"><span class="dot ${st.dot}"></span>${st.label} <span class="cnt2">${items.length}</span></div>`;
+    items.forEach(t=>{
+      const due=t.due?` · due ${esc(t.due)}`:'';
+      const d=document.createElement('div'); d.className='task';
+      d.innerHTML=`<div class="tt"><a href="${esc(t.url)}" target="_blank" style="color:inherit;text-decoration:none">${esc(t.id)} — ${esc(t.title)}</a></div>
+        <div class="meta"><span class="who ${t.source==='linear'?'ai':'temo'}">${esc(t.source)}</span><span class="tag">${esc(t.project||'')}</span><span class="pri">${esc(t.priority||'')}${due}</span></div>`;
+      col.appendChild(d);
+    });
+    if(!items.length) col.innerHTML+=`<div class="note">—</div>`;
+    board.appendChild(col);
+  });
+}).catch(()=>{document.getElementById('extsrc').textContent='external-tasks.json not loaded yet';});
 
 Promise.all([
   fetch('./data.json?_='+Date.now()).then(r=>r.json()).catch(()=>null),
