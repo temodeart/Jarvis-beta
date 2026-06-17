@@ -1,0 +1,116 @@
+{
+  "_comment": "Project registry — single source of truth for the command center & bot routing. v0.2 with Temo's corrections.",
+  "version": "0.2",
+  "lastUpdated": "2026-06-17",
+  "github": "https://github.com/temodeart/Jarvis-beta.git",
+  "routingNote": "Decision-maker is task-dependent (depends on who assigned the work). Since the flow is AI -> me -> lead, when the bot sends YOU a draft it offers a 'send to:' choice among that project's leads. 'default' = the usual decider when unspecified.",
+  "imageTooling": "Magnific MCP for all image assets (marketing posters, etc). Magnific also has a non-AI stock library usable when appropriate.",
+  "projects": [
+    {
+      "id": "tino",
+      "name": "Tino Superapp",
+      "company": "Teso Group / SkyWhale",
+      "type": "design-system + app screens + marketing posters + UI/UX audits",
+      "skill": "tino-figma-builder",
+      "themes": ["tino", "tino-go"],
+      "tools": ["figma", "magnific"],
+      "leads": [
+        { "name": "Dulguun", "role": "CEO", "default": true, "platform": "telegram", "handle": "TODO" },
+        { "name": "Irmuun", "role": "Marketing decisions", "platform": "telegram", "handle": "TODO" },
+        { "name": "Zulaa", "role": "PM", "platform": "telegram", "handle": "TODO" }
+      ],
+      "repo": "TODO (Sky whale/Tino/repo)",
+      "figma": "TODO",
+      "status": "active"
+    },
+    {
+      "id": "tino-go",
+      "name": "Tino Go (taxi mini app)",
+      "company": "Teso Group / SkyWhale",
+      "type": "mini-app screens + recruitment posters",
+      "skill": "tino-figma-builder",
+      "themes": ["tino-go"],
+      "tools": ["figma", "magnific"],
+      "leads": [
+        { "name": "Miigaa", "role": "PM", "default": true, "platform": "telegram", "handle": "TODO" },
+        { "name": "Margad", "role": "CEO of Tino Go — final decision maker", "platform": "telegram", "handle": "TODO" }
+      ],
+      "repo": "TODO",
+      "figma": "TODO",
+      "status": "active"
+    },
+    {
+      "id": "mmf",
+      "name": "Money Market Fund",
+      "company": "Мони Маркет Фанд ХХК",
+      "type": "app screens (light + dark), prompt-batched DA->CL workflow",
+      "skill": "mmf-figma-builder",
+      "themes": ["mmf", "mmf-dark"],
+      "tools": ["figma", "magnific"],
+      "leads": [
+        { "name": "MMF UX/UI group", "role": "all leads in one Viber group", "default": true, "platform": "viber", "handle": "TODO (group)" }
+      ],
+      "repo": "TODO",
+      "figma": "TODO",
+      "status": "active"
+    },
+    {
+      "id": "midas",
+      "name": "Midas Finance",
+      "company": "Midas Finance",
+      "type": "website + app + presentations",
+      "skill": "midas-figma-builder",
+      "themes": ["midas"],
+      "tools": ["figma", "magnific"],
+      "leads": [
+        { "name": "TODO", "role": "TODO", "default": true, "platform": "TODO", "handle": "TODO" }
+      ],
+      "repo": "TODO",
+      "figma": "TODO",
+      "status": "active"
+    },
+    {
+      "id": "carmax",
+      "name": "CarMax",
+      "company": "TODO (confirm — grouped with Midas in your combined deck)",
+      "type": "web + native app + presentations",
+      "skill": "midas-figma-builder",
+      "themes": ["carmax-web", "carmax-native"],
+      "tools": ["figma", "magnific"],
+      "leads": [
+        { "name": "TODO", "role": "TODO", "default": true, "platform": "telegram", "handle": "TODO" }
+      ],
+      "repo": "TODO",
+      "figma": "TODO",
+      "status": "active"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing / Posters / Media kits (cross-project)",
+      "company": "various",
+      "type": "poster & asset design, media kits — image assets via Magnific",
+      "skill": "canvas-design",
+      "themes": [],
+      "tools": ["magnific", "canvas-design"],
+      "leads": [
+        { "name": "Irmuun", "role": "Marketing decisions (Tino)", "default": true, "platform": "telegram", "handle": "TODO" }
+      ],
+      "repo": "n/a",
+      "figma": "TODO",
+      "status": "active"
+    },
+    {
+      "id": "skills-dev",
+      "name": "Skill / pipeline development",
+      "company": "internal",
+      "type": "building the *-figma-builder skills, design->Figma pipeline",
+      "skill": "skill-creator",
+      "themes": [],
+      "tools": [],
+      "leads": [{ "name": "self", "role": "self", "default": true, "platform": "n/a", "handle": "n/a" }],
+      "repo": "TODO",
+      "figma": "n/a",
+      "status": "active"
+    }
+  ]
+}

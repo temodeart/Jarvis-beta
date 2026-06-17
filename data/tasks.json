@@ -1,0 +1,8 @@
+{
+  "_comment": "Central task hub. Written by both you and AI sessions. status: needs_me | in_progress_ai | blocked | done. Seeded with examples.",
+  "tasks": [
+    { "id": "t1", "project": "mmf", "title": "Dark mode token set + proof screen (Opus), then approve", "status": "needs_me", "owner": "ai", "updated": "2026-06-17" },
+    { "id": "t2", "project": "tino", "title": "Provide Tino design-system repo path + stack for audit", "status": "needs_me", "owner": "temo", "updated": "2026-06-17" },
+    { "id": "t3", "project": "tino-go", "title": "Driver recruitment poster variants", "status": "in_progress_ai", "owner": "ai", "updated": "2026-06-17" }
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "generatedAt": 1781694902558,
+  "sessionCount": 32,
+  "tokensAvailable": true,
+  "tokensNote": "Real token counts recovered from Claude Code transcripts.",
+  "byModel": {
+    "claude-sonnet-4-6": 6,
+    "claude-opus-4-8[1m]": 18,
+    "claude-opus-4-7": 4,
+    "claude-fable-5[1m]": 3,
+    "unknown": 1
+  },
+  "projects": [
+    {
+      "id": "other",
+      "name": "Unsorted",
+      "company": "—",
+      "sessions": 11,
+      "models": {
+        "claude-sonnet-4-6": 2,
+        "claude-opus-4-8[1m]": 6,
+        "claude-opus-4-7": 2,
+        "claude-fable-5[1m]": 1
+      },
+      "lastActivity": 1781694778634,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "skills",
+      "name": "Skill / Pipeline dev",
+      "company": "internal",
+      "sessions": 7,
+      "models": {
+        "claude-opus-4-8[1m]": 4,
+        "claude-fable-5[1m]": 1,
+        "claude-sonnet-4-6": 1,
+        "claude-opus-4-7": 1
+      },
+      "lastActivity": 1781527839772,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "personal",
+      "name": "Personal / Other",
+      "company": "—",
+      "sessions": 5,
+      "models": {
+        "claude-sonnet-4-6": 1,
+        "claude-opus-4-8[1m]": 3,
+        "claude-fable-5[1m]": 1
+      },
+      "lastActivity": 1781074881328,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "mmf",
+      "name": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "sessions": 3,
+      "models": {
+        "claude-opus-4-8[1m]": 1,
+        "claude-opus-4-7": 1,
+        "unknown": 1
+      },
+      "lastActivity": 1781484891281,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "midas",
+      "name": "Midas Finance",
+      "company": "Midas Finance",
+      "sessions": 2,
+      "models": {
+        "claude-opus-4-8[1m]": 1,
+        "claude-sonnet-4-6": 1
+      },
+      "lastActivity": 1780919616977,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "tino",
+      "name": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "sessions": 1,
+      "models": {
+        "claude-opus-4-8[1m]": 1
+      },
+      "lastActivity": 1781599646983,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing / Posters",
+      "company": "cross-project",
+      "sessions": 1,
+      "models": {
+        "claude-opus-4-8[1m]": 1
+      },
+      "lastActivity": 1781599511997,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "tino-go",
+      "name": "Tino Go",
+      "company": "Teso / SkyWhale",
+      "sessions": 1,
+      "models": {
+        "claude-opus-4-8[1m]": 1
+      },
+      "lastActivity": 1781690741130,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "carmax",
+      "name": "CarMax",
+      "company": "CarMax",
+      "sessions": 1,
+      "models": {
+        "claude-sonnet-4-6": 1
+      },
+      "lastActivity": 1774966730663,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "id": "local_7e07c663-5977-43fc-82cd-5c1964aac4b5",
+      "title": "AI workflow and monitoring hub",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781691193764,
+      "lastActivityAt": 1781694778634,
+      "enabledMcps": 49,
+      "tokens": null
+    },
+    {
+      "id": "local_829f6908-7131-4716-b82e-f5e790993378",
+      "title": "Tino Go driver recruitment poster",
+      "project": "tino-go",
+      "projectName": "Tino Go",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781674896068,
+      "lastActivityAt": 1781690741130,
+      "enabledMcps": 49,
+      "tokens": null
+    },
+    {
+      "id": "local_69b7cf12-aff8-4fc9-abb3-1683a078eabe",
+      "title": "Tino AI workflow setup",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781505193214,
+      "lastActivityAt": 1781599646983,
+      "enabledMcps": 21,
+      "tokens": null
+    },
+    {
+      "id": "local_62f1a550-a431-42fb-8708-a71fad0d6eb3",
+      "title": "Media kit folder structure",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781599257318,
+      "lastActivityAt": 1781599511997,
+      "enabledMcps": 21,
+      "tokens": null
+    },
+    {
+      "id": "local_f583ec67-1df0-44a4-a7f0-96bc7e40688f",
+      "title": "Bundle deployment and testing website",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781521419749,
+      "lastActivityAt": 1781527839772,
+      "enabledMcps": 21,
+      "tokens": null
+    },
+    {
+      "id": "local_8a9121d1-36ff-4100-b825-f26be6690ddf",
+      "title": "Money Market Fund theme and skill",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781442976819,
+      "lastActivityAt": 1781484891281,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_1430705d-f02d-4a38-81e4-842725ae9f6d",
+      "title": "Update tasks organization",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781356200097,
+      "lastActivityAt": 1781356263004,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_7db0e6fb-b8cb-4d7f-aa99-4347afb3f9e5",
+      "title": "Money Market Fund design workflow",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "unknown",
+      "archived": false,
+      "createdAt": 1781248050213,
+      "lastActivityAt": 1781355530552,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_c51f0b3f-d791-4b61-81f0-e40e7656926c",
+      "title": "Parts and service UX improvements",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-fable-5[1m]",
+      "archived": false,
+      "createdAt": 1781166609159,
+      "lastActivityAt": 1781167755292,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_aa467c3d-99ef-4ca4-83aa-999eaa058d64",
+      "title": "Bundle at exports",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781160299548,
+      "lastActivityAt": 1781163780399,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_1f430c6f-502f-4e4e-88be-d50d72a6f276",
+      "title": "Bundle at exports",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781111031434,
+      "lastActivityAt": 1781161908618,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_5dca04ab-d9e0-4e07-be12-00297e87fd3f",
+      "title": "Design-to-Figma pipeline system",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-fable-5[1m]",
+      "archived": false,
+      "createdAt": 1781101945166,
+      "lastActivityAt": 1781157584212,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_0d156fe4-67be-4bb5-a370-6fbc74b0b37c",
+      "title": "Claude Design to Figma migration",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781081265946,
+      "lastActivityAt": 1781098808688,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_eb2710a6-f356-423c-bf0c-f2689ee97e86",
+      "title": "Medication schedule with work",
+      "project": "personal",
+      "projectName": "Personal / Other",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781074844116,
+      "lastActivityAt": 1781074881328,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_2c46d4c4-f363-4462-b33c-bda214d5c6fc",
+      "title": "Personal financial strategy",
+      "project": "personal",
+      "projectName": "Personal / Other",
+      "company": "—",
+      "model": "claude-fable-5[1m]",
+      "archived": false,
+      "createdAt": 1781030438642,
+      "lastActivityAt": 1781030457282,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_de6f9f8e-076e-4882-bc11-672747af6180",
+      "title": "Link preview request",
+      "project": "personal",
+      "projectName": "Personal / Other",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781006422053,
+      "lastActivityAt": 1781006511307,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_a90602dd-4e12-43df-971f-be00b1072ac2",
+      "title": "Midas Finance website structure",
+      "project": "midas",
+      "projectName": "Midas Finance",
+      "company": "Midas Finance",
+      "model": "claude-sonnet-4-6",
+      "archived": false,
+      "createdAt": 1780919482933,
+      "lastActivityAt": 1780919616977,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_cfd8ca28-86cc-4820-ad9f-2c5523388b31",
+      "title": "HTML prototype GitHub upload",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1780897186854,
+      "lastActivityAt": 1780897739827,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_de86442f-080b-4bcc-a665-3f3888a8fff3",
+      "title": "Screen inventory and tasks",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-sonnet-4-6",
+      "archived": false,
+      "createdAt": 1780475784961,
+      "lastActivityAt": 1780478649906,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_3a71753f-fc5b-4743-879b-42aa15fbe126",
+      "title": "Combined CARMAX and Midas presentation",
+      "project": "midas",
+      "projectName": "Midas Finance",
+      "company": "Midas Finance",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1780472270280,
+      "lastActivityAt": 1780474416230,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_5c5484b4-1731-4bf9-89b9-f74ea0c3139a",
+      "title": "Mobile design spacing fixes",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1780417444883,
+      "lastActivityAt": 1780428791046,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_8f488628-06fa-4982-9ba9-c8aa510d430b",
+      "title": "Mobile app screens",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1780421676866,
+      "lastActivityAt": 1780422470602,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_7b5883cd-7c75-40e4-8d0f-5c7f5eb3f8f0",
+      "title": "Schedule a recurring task",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1780417495288,
+      "lastActivityAt": 1780417506644,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_769ddc23-704a-4509-a8f5-e08e6db27747",
+      "title": "Plan initiation",
+      "project": "personal",
+      "projectName": "Personal / Other",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1780203289127,
+      "lastActivityAt": 1780204034297,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_431512e2-3b53-4562-80ac-3d39954fe6fe",
+      "title": "AI design workflow skill",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-7",
+      "archived": false,
+      "createdAt": 1779873298435,
+      "lastActivityAt": 1779874324557,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_84b18e65-ced8-4783-ad95-b7a9f662c3b5",
+      "title": "Figma MCP connection check",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-sonnet-4-6",
+      "archived": false,
+      "createdAt": 1779865027117,
+      "lastActivityAt": 1779866889764,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_c76dc73d-8bb2-45d4-8a9b-0167cbab7d38",
+      "title": "UX/UI Audit for Money Market Site",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "claude-opus-4-7",
+      "archived": false,
+      "createdAt": 1778824912357,
+      "lastActivityAt": 1779258633414,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_cc9b5ad5-5294-475f-8003-242666553fb6",
+      "title": "Create Rococo Architecture PowerPoint Presentation",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-7",
+      "archived": false,
+      "createdAt": 1779209629120,
+      "lastActivityAt": 1779211795081,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_e52cf748-a79c-4d4b-8b34-1576203803e4",
+      "title": "Fix CV typos and reduce file size",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-7",
+      "archived": false,
+      "createdAt": 1779181761913,
+      "lastActivityAt": 1779182266170,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_8a2c644f-3cc7-4938-95f2-3f54db3c2f45",
+      "title": "Remove duplicate files from folder",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-sonnet-4-6",
+      "archived": false,
+      "createdAt": 1778735986006,
+      "lastActivityAt": 1778736231710,
+      "enabledMcps": 11,
+      "tokens": null
+    },
+    {
+      "id": "local_7c6be0eb-9d28-4d64-9477-e0f34e4973b3",
+      "title": "Summarize My Ideas",
+      "project": "personal",
+      "projectName": "Personal / Other",
+      "company": "—",
+      "model": "claude-sonnet-4-6",
+      "archived": false,
+      "createdAt": 1777273775308,
+      "lastActivityAt": 1777280323289,
+      "enabledMcps": 11,
+      "tokens": null
+    },
+    {
+      "id": "local_4e88ba05-61ee-4b29-b09f-92ca90e6b4f1",
+      "title": "Summarize CarMax Platform wireframes",
+      "project": "carmax",
+      "projectName": "CarMax",
+      "company": "CarMax",
+      "model": "claude-sonnet-4-6",
+      "archived": false,
+      "createdAt": 1774964327862,
+      "lastActivityAt": 1774966730663,
+      "enabledMcps": 11,
+      "tokens": null
+    }
+  ]
+}
