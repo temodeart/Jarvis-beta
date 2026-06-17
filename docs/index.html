@@ -3,176 +3,308 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Jarvis — Command Center (GitHub)</title>
+<title>Jarvis — Command Center</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js"></script>
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--ink:#15171c;--muted:#6b7280;--line:#e6e8ec;--accent:#4f46e5;--green:#16a34a;--amber:#d97706;--red:#dc2626;--blue:#2563eb;}
+:root{--bg:#f5f6f8;--card:#fff;--ink:#15171c;--muted:#6b7280;--line:#e6e8ec;--accent:#4f46e5;
+ --hot:#dc2626;--warm:#ea7317;--cool:#3b82f6;--green:#16a34a;--blue:#2563eb;--amber:#d97706;}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-.wrap{max-width:1160px;margin:0 auto;padding:22px}
-h1{font-size:21px;margin:0 0 2px}.sub{color:var(--muted);font-size:12px;margin-bottom:16px}
+.wrap{max-width:1180px;margin:0 auto;padding:20px}
+h1{font-size:20px;margin:0}.sub{color:var(--muted);font-size:12px;margin-top:2px}
+.topbar{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.tabs{display:flex;gap:4px;background:#eceef2;border-radius:10px;padding:4px}
+.tab{border:none;background:none;padding:8px 16px;border-radius:7px;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer}
+.tab.active{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
 .card h2{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:0 0 10px}
+.section{margin-top:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:760px){.two{grid-template-columns:1fr}}
+.cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
 .kpi{display:flex;gap:22px;flex-wrap:wrap}.kpi .n{font-size:26px;font-weight:700}.kpi .l{font-size:11px;color:var(--muted);text-transform:uppercase}
-.section{margin-top:16px}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:720px){.two{grid-template-columns:1fr}}
-.cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
-.nm{font-weight:600;font-size:15px}.co{color:var(--muted);font-size:12px}
+.note{font-size:12px;color:var(--muted)}.nm{font-weight:600;font-size:15px}.co{color:var(--muted);font-size:12px}
 .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .b{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);background:#fafbfc;color:var(--muted)}
 .b.cnt{background:#eef0fe;color:var(--accent);border-color:#d8dcfb}
-.b.op{background:#f3eafe;color:#7c3aed;border-color:#e4d4fb}
-.b.so{background:#eaf6ff;color:#0369a1;border-color:#cce8fb}
+.b.op{background:#f3eafe;color:#7c3aed;border-color:#e4d4fb}.b.so{background:#eaf6ff;color:#0369a1;border-color:#cce8fb}
 .row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);gap:10px}
 .row:last-child{border-bottom:none}.ti{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.mt{color:var(--muted);font-size:12px}.note{font-size:12px;color:var(--muted)}
-.warn{background:#fff8e6;border:1px solid #f3e0a8;color:#8a6d1a;padding:8px 10px;border-radius:8px;font-size:12px;margin-bottom:12px}
-.ok{background:#eef9f1;border:1px solid #cdeed5;color:#1b6b35}
-canvas{max-height:220px}
-/* task board */
-.board{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-@media(max-width:900px){.board{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.board{grid-template-columns:1fr}}
-.colhead{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;margin-bottom:8px}
-.dot{width:9px;height:9px;border-radius:50%}
-.dot.needs{background:var(--amber)}.dot.prog{background:var(--blue)}.dot.blocked{background:var(--red)}.dot.done{background:var(--green)}
-.cnt2{font-size:11px;color:var(--muted);font-weight:400}
-.task{border:1px solid var(--line);border-radius:9px;padding:9px 10px;margin-bottom:8px;background:#fcfcfd}
-.task .tt{font-size:13px;font-weight:500;margin-bottom:5px}
-.task .meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.mt{color:var(--muted);font-size:12px}
+.hidden{display:none}
+/* hot strip */
+.hotstrip{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.hotcard{border:1px solid var(--line);border-left:4px solid var(--cool);border-radius:10px;padding:11px;cursor:pointer;background:#fff;transition:transform .08s,box-shadow .08s}
+.hotcard:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,.09)}
+.hotcard .tt{font-weight:600;font-size:13px;margin:2px 0 7px;line-height:1.3}
+.heat{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px}
+.meter{height:5px;border-radius:3px;background:#eceef2;overflow:hidden;margin-top:8px}
+.meter>i{display:block;height:100%}
+.metaline{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}
 .tag{font-size:10px;padding:1px 7px;border-radius:999px;background:#eef0fe;color:var(--accent)}
-.who{font-size:10px;padding:1px 7px;border-radius:999px}
-.who.ai{background:#eef0fe;color:var(--accent)}.who.temo{background:#fff5e6;color:var(--amber)}
+.who{font-size:10px;padding:1px 7px;border-radius:999px}.who.linear{background:#eef0fe;color:var(--accent)}.who.notion{background:#f1f0ee;color:#555}
 .pri{font-size:10px;color:var(--muted)}
-.tnote{font-size:11px;color:var(--muted);margin-top:5px}
-.done .task .tt{text-decoration:line-through;color:var(--muted)}
+/* board */
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:760px){.board{grid-template-columns:1fr}}
+.colhead{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;margin-bottom:8px}
+.dot{width:9px;height:9px;border-radius:50%}.dot.needs{background:var(--amber)}.dot.prog{background:var(--blue)}.dot.done{background:var(--green)}
+.cnt2{font-size:11px;color:var(--muted);font-weight:400}
+.task{border:1px solid var(--line);border-left:4px solid var(--cool);border-radius:9px;padding:9px 10px;margin-bottom:8px;background:#fcfcfd;cursor:pointer}
+.task:hover{background:#f4f6ff}
+.task .tt2{font-size:13px;font-weight:500;margin-bottom:5px}
+.opsboard .task{cursor:default;border-left-color:#cbd5e1}
+.done .task,.done .hotcard{opacity:.7}
+/* modal */
+.overlay{position:fixed;inset:0;background:rgba:0,0,0,.4;background:rgba(20,23,28,.45);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}
+.overlay.show{display:flex}
+.modal{background:#fff;border-radius:14px;max-width:620px;width:100%;max-height:88vh;overflow:auto;padding:20px}
+.modal h3{margin:0 0 4px;font-size:17px}.modal .x{float:right;cursor:pointer;color:var(--muted);font-size:20px;line-height:1;border:none;background:none}
+.wf{margin-top:14px}.wf .step{display:flex;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.wf .step b{color:var(--accent)}
+.chip{display:inline-block;font-size:11px;padding:3px 9px;border-radius:999px;background:#eef0fe;color:var(--accent);margin:2px 4px 2px 0}
+.promptbox{background:#0f1115;color:#e7e9ee;border-radius:10px;padding:12px;font:12px/1.5 ui-monospace,Menlo,monospace;white-space:pre-wrap;margin-top:10px;max-height:240px;overflow:auto}
+.btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer;margin-top:10px}
+.btn.ghost{background:#eef0fe;color:var(--accent)}
+a.srclink{color:var(--accent);text-decoration:none;font-size:12px}
+.warn{background:#fff8e6;border:1px solid #f3e0a8;color:#8a6d1a;padding:8px 10px;border-radius:8px;font-size:12px;margin-bottom:12px}
+.warn.ok{background:#eef9f1;border-color:#cdeed5;color:#1b6b35}
+canvas{max-height:220px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Jarvis — Command Center</h1>
-  <div class="sub" id="sub">Loading…</div>
-  <div class="warn" id="tok"></div>
-  <div class="card kpi" id="kpis"></div>
-
-  <div class="section"><div class="card">
-    <h2>Task board — Jarvis ops</h2>
-    <div class="board" id="board"></div>
-  </div></div>
-
-  <div class="section"><div class="card">
-    <h2>My tasks — Linear &amp; Notion</h2>
-    <div id="extsrc" class="note" style="margin-bottom:8px"></div>
-    <div class="board" id="extboard"></div>
-  </div></div>
-
-  <div class="section"><div class="card"><h2>Projects</h2><div class="cols" id="projects"></div></div></div>
-  <div class="section two">
-    <div class="card"><h2>Model mix (cost proxy)</h2><canvas id="modelChart"></canvas></div>
-    <div class="card"><h2>Sessions by project</h2><canvas id="projChart"></canvas></div>
+  <div class="topbar">
+    <div><h1>Jarvis — Command Center</h1><div class="sub" id="sub">Loading…</div></div>
+    <div class="tabs">
+      <button class="tab active" data-tab="mission">Mission Control</button>
+      <button class="tab" data-tab="ai">AI Activity</button>
+    </div>
   </div>
-  <div class="section"><div class="card"><h2>Recent sessions</h2><div id="sessions"></div></div></div>
-</div>
-<script>
-const fmt = n => n>=1000 ? (n/1000).toFixed(1)+'k' : n;
-const esc = s => (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-function modelBadge(m){const s=(m||'').toLowerCase();const cls=s.includes('opus')?'op':s.includes('sonnet')?'so':'';const short=s.replace('claude-','').replace(/\[.*$/,'');return `<span class="b ${cls}">${esc(short)}</span>`;}
 
-// ---- Task board ----
-const STATUSES=[
-  {key:'needs_me',label:'Needs me',dot:'needs'},
-  {key:'in_progress',label:'AI in progress',dot:'prog'},
-  {key:'blocked',label:'Blocked',dot:'blocked'},
-  {key:'done',label:'Done',dot:'done'},
-];
-function renderTasks(tasks){
-  const board=document.getElementById('board'); board.innerHTML='';
-  STATUSES.forEach(st=>{
-    const items=tasks.filter(t=>t.status===st.key);
-    const col=document.createElement('div'); col.className=st.key==='done'?'done':'';
-    col.innerHTML=`<div class="colhead"><span class="dot ${st.dot}"></span>${st.label} <span class="cnt2">${items.length}</span></div>`;
+  <!-- ===== MISSION CONTROL ===== -->
+  <div id="tab-mission">
+    <div class="section"><div class="card">
+      <h2>🔥 Do next — hottest tasks</h2>
+      <div class="hotstrip" id="hotstrip"></div>
+      <div class="note" id="hotnote" style="margin-top:8px"></div>
+    </div></div>
+
+    <div class="section"><div class="card">
+      <h2>My tasks — Linear &amp; Notion</h2>
+      <div id="extsrc" class="note" style="margin-bottom:8px"></div>
+      <div class="board" id="extboard"></div>
+    </div></div>
+
+    <div class="section"><div class="card opsboard">
+      <h2>Jarvis ops</h2>
+      <div class="board" id="opsboard"></div>
+    </div></div>
+  </div>
+
+  <!-- ===== AI ACTIVITY ===== -->
+  <div id="tab-ai" class="hidden">
+    <div class="warn" id="tok"></div>
+    <div class="card kpi" id="kpis"></div>
+    <div class="section"><div class="card"><h2>Projects</h2><div class="cols" id="projects"></div></div></div>
+    <div class="section two">
+      <div class="card"><h2>Model mix (cost proxy)</h2><canvas id="modelChart"></canvas></div>
+      <div class="card"><h2>Sessions by project</h2><canvas id="projChart"></canvas></div>
+    </div>
+    <div class="section"><div class="card"><h2>Recent sessions</h2><div id="sessions"></div></div></div>
+  </div>
+</div>
+
+<!-- task workflow modal -->
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script>
+const esc=s=>(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const fmt=n=>n>=1000?(n/1000).toFixed(1)+'k':n;
+const modelBadge=m=>{const s=(m||'').toLowerCase();const c=s.includes('opus')?'op':s.includes('sonnet')?'so':'';return `<span class="b ${c}">${esc(s.replace('claude-','').replace(/\[.*$/,''))}</span>`;};
+
+// ---- tabs ----
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  document.getElementById('tab-mission').classList.toggle('hidden',b.dataset.tab!=='mission');
+  document.getElementById('tab-ai').classList.toggle('hidden',b.dataset.tab!=='ai');
+});
+
+// ================= TASK HEAT (knows what matters to Temo) =================
+// Leverage: active client design work runs hot; stale/abandoned projects cool off.
+const LEVERAGE={'CarMax Platform':15,'Tino':16,'Tino go':15,'Tino (Graphic)':10,'MMF':15,'Money Market Fund':15,'Midas Finance':14,'Mongol Alt':-6,'Minu Plus':-6,'Portfolio':4};
+const PRI={Urgent:40,High:30,Medium:16,Low:6};
+function daysUntil(due){return due?Math.round((new Date(due)-new Date())/864e5):null;}
+function heatScore(t){
+  if(t.statusType==='completed')return 0;
+  let s=PRI[t.priority]||12;
+  const d=daysUntil(t.due);
+  let due=6;
+  if(d!==null){ if(d<-120)due=8; else if(d<0)due=38; else if(d<=2)due=36; else if(d<=7)due=26; else if(d<=14)due=16; else due=8; }
+  s+=due;
+  if(t.statusType==='started')s+=12;            // momentum: finish what's open
+  s+=(LEVERAGE[t.project]!==undefined?LEVERAGE[t.project]:5);
+  s=Math.max(0,Math.min(100,s));
+  if(d!==null&&d<-120)s=Math.min(s,30);          // stale damper (abandoned long-overdue)
+  return Math.round(s);
+}
+function heatBand(h){return h>=70?{l:'HOT',c:'var(--hot)'}:h>=45?{l:'WARM',c:'var(--warm)'}:{l:'COOL',c:'var(--cool)'};}
+function heatReason(t){
+  const r=[];const d=daysUntil(t.due);
+  if(d!==null&&d<0&&d>=-120)r.push(`overdue ${-d}d`);
+  else if(d!==null&&d>=0&&d<=7)r.push(`due in ${d}d`);
+  if(t.priority==='Urgent'||t.priority==='High')r.push(t.priority.toLowerCase()+' priority');
+  if(t.statusType==='started')r.push('in progress');
+  if((LEVERAGE[t.project]||0)>=14)r.push('high-leverage client work');
+  if(d!==null&&d<-120)r.push('stale — likely abandoned, consider closing');
+  return r.join(' · ')||'low urgency';
+}
+
+// ================= WORKFLOW SUGGESTION ENGINE =================
+function suggestWorkflow(t){
+  const T=(t.title||'').toLowerCase(), p=t.project||'';
+  const brand=/tino go/i.test(p+t.title)?'Tino Go':/tino/i.test(p+t.title)?'Tino':/carmax/i.test(p+t.title)?'CarMax':/mmf|money market/i.test(p+t.title)?'MMF':/midas/i.test(p+t.title)?'Midas':null;
+  const ctx=brand?`Load ${brand}'s CLAUDE.md (brand context) first.`:'';
+  if(/audit|review|critique/.test(T))
+    return {kind:'UX Audit',model:'Opus 4.8',why:'evaluative judgment',skill:'design:design-critique + accessibility-review',
+      steps:['Pull the live screens/flow for '+(brand||'the product')+' and the brand design system.','Run a heuristic + accessibility pass; capture issues with severity.','Cluster issues into themes; rank by user impact.','Turn each into a Linear/Notion sub-task with a clear fix.'],
+      prompt:`Run a UX audit of ${brand||'the product'}: "${t.title}". ${ctx}\nUse the design-critique + accessibility-review skills. Produce a severity-ranked issues list, then create a sub-task per fix. Model: Opus.`};
+  if(/marketing|poster|media kit|preview|brand|asset|graphic/.test(T))
+    return {kind:'Marketing asset',model:'Sonnet 4.6',why:'execution from a brief',skill:'canvas-design + Magnific MCP',
+      steps:['Confirm the brief, dimensions, and channel.','Generate/source imagery via Magnific MCP (or its stock library).','Lay out variants on-brand; produce 2–3 options.','Send to the lead for the green light (AI→you→lead).'],
+      prompt:`Create the assets for "${t.title}" (${brand||p}). ${ctx}\nUse Magnific MCP for imagery. Give me 2–3 on-brand variants, then prep for lead review. Model: Sonnet.`};
+  if(/payment|flow|prototype|checkout|onboard/.test(T))
+    return {kind:'Flow design',model:'Opus → Sonnet',why:'explore then build',skill:'figma-builder',
+      steps:['Map current vs proposed states for the flow.','Opus: propose 2–3 directions — WAIT for your pick (cheap before building).','Sonnet: build the chosen flow screens via the figma-builder.','Prep a short decision doc for stakeholders.'],
+      prompt:`Design "${t.title}" for ${brand||p}. ${ctx}\nFirst propose 2–3 flow directions and wait for my choice, then build the screens. Follow PROMPT-BATCH-SOP. Models: Opus to explore, Sonnet to build.`};
+  if(/map|feature|screen|home|detail|list|responsive|modal|popup/.test(T))
+    return {kind:'Screen build',model:'Sonnet 4.6',why:'applying an established system',skill:brand?`${brand.toLowerCase().replace(' ','-')}-figma-builder`:'figma-builder',
+      steps:['Confirm the spec and which screens/states are in scope.','Apply the brand design system + tokens.','Build via the figma-builder; batch independent screens.','List changed files/screens for fast QA.'],
+      prompt:`Build "${t.title}" for ${brand||p}. ${ctx}\nApply the design system and build via the ${brand?brand+' ':''}figma-builder. Batch independent screens, list what changed. Model: Sonnet.`};
+  if(/video|tutorial|content/.test(T))
+    return {kind:'Content',model:'Sonnet 4.6',why:'drafting',skill:'—',
+      steps:['Draft a script/outline.','Storyboard key frames.','Record/produce; review.'],
+      prompt:`Draft a script + storyboard for "${t.title}". Model: Sonnet.`};
+  return {kind:'General',model:'Sonnet 4.6',why:'default',skill:'PROMPT-BATCH-SOP',
+    steps:['Break "'+t.title+'" into atomic prompts (PROMPT-BATCH-SOP).','Tag each with a model; order by dependency.','Gate any layout decision before building.','List what changed for QA.'],
+    prompt:`Help me finish "${t.title}" (${p}). Decompose into a batched prompt plan per PROMPT-BATCH-SOP, route models per MODEL-ROUTING, and start. Model: Sonnet.`};
+}
+
+function openTask(t){
+  const h=heatScore(t),band=heatBand(h),w=suggestWorkflow(t),d=daysUntil(t.due);
+  const m=document.getElementById('modal');
+  m.innerHTML=`<button class="x" onclick="closeModal()">×</button>
+    <h3>${esc(t.title)}</h3>
+    <div class="note">${esc(t.project||'')} · ${esc(t.source||'')} ${t.due?'· due '+esc(t.due)+(d!==null?` (${d<0?(-d)+'d overdue':d+'d left'})`:''):''}</div>
+    <div class="metaline" style="margin-top:8px">
+      <span class="heat" style="background:${band.c};color:#fff">🔥 ${h} ${band.l}</span>
+      <span class="pri">${esc(t.priority||'')} · ${esc(t.status||'')}</span></div>
+    <div class="note" style="margin-top:6px">Why this ranks here: ${esc(heatReason(t))}</div>
+    <div class="wf">
+      <div style="font-weight:600;margin-bottom:4px">Suggested AI workflow — ${esc(w.kind)}</div>
+      <div>${w.steps.map((s,i)=>`<div class="step"><b>${i+1}</b><div>${esc(s)}</div></div>`).join('')}</div>
+      <div style="margin-top:10px"><span class="chip">model: ${esc(w.model)}</span><span class="chip">skill: ${esc(w.skill)}</span></div>
+      <div class="note" style="margin-top:8px">Starter prompt (copy into Cowork):</div>
+      <div class="promptbox" id="pbox">${esc(w.prompt)}</div>
+      <button class="btn" onclick="copyPrompt()">Copy prompt</button>
+      ${t.url?`<a class="srclink" style="margin-left:12px" href="${esc(t.url)}" target="_blank">Open in ${esc(t.source)} ↗</a>`:''}
+    </div>`;
+  document.getElementById('overlay').classList.add('show');
+}
+function closeModal(){document.getElementById('overlay').classList.remove('show');}
+function copyPrompt(){const t=document.getElementById('pbox').innerText;navigator.clipboard&&navigator.clipboard.writeText(t);const b=event.target;b.textContent='Copied ✓';setTimeout(()=>b.textContent='Copy prompt',1500);}
+document.getElementById('overlay').onclick=e=>{if(e.target.id==='overlay')closeModal();};
+
+// ================= RENDER: external tasks (heat-aware, clickable) =================
+const GROUPS=[{k:'unstarted',l:'To do',dot:'needs'},{k:'started',l:'In progress',dot:'prog'},{k:'completed',l:'Done',dot:'done'}];
+let ALL_TASKS=[];
+function renderExternal(x){
+  const s=x.sources||{},l=s.linear||{},n=s.notion||{};
+  document.getElementById('extsrc').innerHTML=`Linear: ${l.ok?'✓ '+esc(l.workspace||''):'—'} &nbsp;·&nbsp; Notion: ${n.ok?'✓ '+esc(n.workspace||''):'⚠ '+esc(n.note||'not connected')}`;
+  ALL_TASKS=(x.tasks||[]).map(t=>({...t,_heat:heatScore(t)}));
+  // hot strip
+  const hot=ALL_TASKS.filter(t=>t.statusType!=='completed').sort((a,b)=>b._heat-a._heat).slice(0,5);
+  document.getElementById('hotstrip').innerHTML=hot.map(t=>{
+    const band=heatBand(t._heat);
+    return `<div class="hotcard" style="border-left-color:${band.c}" onclick='openTask(${JSON.stringify(t).replace(/'/g,"&#39;")})'>
+      <span class="heat" style="background:${band.c};color:#fff">🔥 ${t._heat}</span>
+      <div class="tt">${esc(t.title)}</div>
+      <div class="metaline"><span class="who ${t.source}">${esc(t.source)}</span><span class="tag">${esc(t.project||'')}</span><span class="pri">${esc(t.priority||'')}${t.due?' · due '+esc(t.due):''}</span></div>
+      <div class="meter"><i style="width:${t._heat}%;background:${band.c}"></i></div></div>`;
+  }).join('')||'<div class="note">No open tasks 🎉</div>';
+  document.getElementById('hotnote').textContent='Heat = priority + deadline + momentum + leverage (weighted to what moves your work forward). Click any task for a suggested AI workflow.';
+  // board
+  const board=document.getElementById('extboard');board.innerHTML='';
+  GROUPS.forEach(g=>{
+    const items=ALL_TASKS.filter(t=>t.statusType===g.k).sort((a,b)=>b._heat-a._heat);
+    const col=document.createElement('div');if(g.k==='completed')col.className='done';
+    col.innerHTML=`<div class="colhead"><span class="dot ${g.dot}"></span>${g.l} <span class="cnt2">${items.length}</span></div>`;
     items.forEach(t=>{
-      const d=document.createElement('div'); d.className='task';
-      d.innerHTML=`<div class="tt">${esc(t.title)}</div>
-        <div class="meta"><span class="tag">${esc(t.project)}</span>
-        <span class="who ${t.owner}">${t.owner==='ai'?'AI':'you'}</span>
-        ${t.priority?`<span class="pri">${esc(t.priority)}</span>`:''}</div>
-        ${t.note?`<div class="tnote">${esc(t.note)}</div>`:''}`;
+      const band=heatBand(t._heat);
+      const d=document.createElement('div');d.className='task';d.style.borderLeftColor=g.k==='completed'?'#cbd5e1':band.c;
+      d.onclick=()=>openTask(t);
+      d.innerHTML=`<div class="tt2">${esc(t.title)}</div>
+        <div class="metaline"><span class="who ${t.source}">${esc(t.source)}</span><span class="tag">${esc(t.project||'')}</span>
+        ${g.k!=='completed'?`<span class="pri">🔥${t._heat}${t.due?' · '+esc(t.due):''}</span>`:''}</div>`;
       col.appendChild(d);
     });
-    if(!items.length) col.innerHTML+=`<div class="note">—</div>`;
+    if(!items.length)col.innerHTML+='<div class="note">—</div>';
+    board.appendChild(col);
+  });
+}
+
+// ================= RENDER: Jarvis ops (read-only) =================
+const OPS=[{k:'needs_me',l:'Needs me',dot:'needs'},{k:'in_progress',l:'AI in progress',dot:'prog'},{k:'blocked',l:'Blocked',dot:'needs'},{k:'done',l:'Done',dot:'done'}];
+function renderOps(tk){
+  const board=document.getElementById('opsboard');board.innerHTML='';
+  const tasks=(tk&&tk.tasks)||[];
+  OPS.forEach(st=>{
+    const items=tasks.filter(t=>t.status===st.k);
+    const col=document.createElement('div');if(st.k==='done')col.className='done';
+    col.innerHTML=`<div class="colhead"><span class="dot ${st.dot}"></span>${st.l} <span class="cnt2">${items.length}</span></div>`;
+    items.forEach(t=>{const d=document.createElement('div');d.className='task';
+      d.innerHTML=`<div class="tt2">${esc(t.title)}</div><div class="metaline"><span class="tag">${esc(t.project)}</span><span class="who ${t.owner==='ai'?'linear':'notion'}">${t.owner==='ai'?'AI':'you'}</span></div>`;
+      col.appendChild(d);});
+    if(!items.length)col.innerHTML+='<div class="note">—</div>';
     board.appendChild(col);
   });
   return tasks.filter(t=>t.status==='needs_me').length;
 }
 
-// ---- Linear / Notion external tasks ----
-const EXT=[{key:'unstarted',label:'To do',dot:'needs'},{key:'started',label:'In progress',dot:'prog'},{key:'completed',label:'Done',dot:'done'}];
-fetch('./external-tasks.json?_='+Date.now()).then(r=>r.json()).then(x=>{
-  const s=x.sources||{}, l=s.linear||{}, n=s.notion||{};
-  document.getElementById('extsrc').innerHTML =
-    `Linear: ${l.ok?'✓ '+esc(l.workspace||''):'—'} &nbsp;·&nbsp; Notion: ${n.ok?'✓':'⚠ '+esc(n.note||'not connected')}`;
-  const board=document.getElementById('extboard'); board.innerHTML='';
-  EXT.forEach(st=>{
-    const items=(x.tasks||[]).filter(t=>t.statusType===st.key);
-    const col=document.createElement('div'); if(st.key==='completed') col.className='done';
-    col.innerHTML=`<div class="colhead"><span class="dot ${st.dot}"></span>${st.label} <span class="cnt2">${items.length}</span></div>`;
-    items.forEach(t=>{
-      const due=t.due?` · due ${esc(t.due)}`:'';
-      const d=document.createElement('div'); d.className='task';
-      d.innerHTML=`<div class="tt"><a href="${esc(t.url)}" target="_blank" style="color:inherit;text-decoration:none">${esc(t.id)} — ${esc(t.title)}</a></div>
-        <div class="meta"><span class="who ${t.source==='linear'?'ai':'temo'}">${esc(t.source)}</span><span class="tag">${esc(t.project||'')}</span><span class="pri">${esc(t.priority||'')}${due}</span></div>`;
-      col.appendChild(d);
-    });
-    if(!items.length) col.innerHTML+=`<div class="note">—</div>`;
-    board.appendChild(col);
-  });
-}).catch(()=>{document.getElementById('extsrc').textContent='external-tasks.json not loaded yet';});
+// ================= LOAD =================
+fetch('./external-tasks.json?_='+Date.now()).then(r=>r.json()).then(renderExternal)
+  .catch(()=>{document.getElementById('extsrc').textContent='external-tasks.json not loaded yet';});
+fetch('./tasks.json?_='+Date.now()).then(r=>r.json()).then(renderOps).catch(()=>{});
 
-Promise.all([
-  fetch('./data.json?_='+Date.now()).then(r=>r.json()).catch(()=>null),
-  fetch('./tasks.json?_='+Date.now()).then(r=>r.json()).catch(()=>null),
-]).then(([d,tk])=>{
-  // task board first (the spine)
-  const needCount = tk && tk.tasks ? renderTasks(tk.tasks) : 0;
-
-  if(!d){ document.getElementById('sub').textContent='Task board loaded. Session data (data.json) pending first collector run.';
-    document.getElementById('tok').style.display='none'; return; }
-
-  document.getElementById('sub').textContent =
-    `${d.sessionCount} sessions · ${Object.keys(d.byModel).length} models · ${needCount} need you · updated ${new Date(d.generatedAt).toLocaleString()}`;
-  const tok=document.getElementById('tok');
-  tok.className='warn'+(d.tokensAvailable?' ok':''); tok.textContent=(d.tokensAvailable?'✓ ':'ⓘ ')+d.tokensNote;
-
-  document.getElementById('kpis').innerHTML =
-    `<div><div class="n">${needCount}</div><div class="l">Need you</div></div>`+
+fetch('./data.json?_='+Date.now()).then(r=>r.json()).then(d=>{
+  if(!d){document.getElementById('sub').textContent='Mission Control ready · AI session data pending first collector run';return;}
+  const tok=document.getElementById('tok');tok.className='warn'+(d.tokensAvailable?' ok':'');
+  tok.textContent=(d.tokensAvailable?'✓ ':'ⓘ ')+d.tokensNote;
+  document.getElementById('sub').textContent=`${d.sessionCount} AI sessions · ${Object.keys(d.byModel).length} models · updated ${new Date(d.generatedAt).toLocaleString()}`;
+  document.getElementById('kpis').innerHTML=
     `<div><div class="n">${d.sessionCount}</div><div class="l">Sessions</div></div>`+
     `<div><div class="n">${d.projects.filter(p=>!['personal','other'].includes(p.id)).length}</div><div class="l">Projects</div></div>`+
     Object.entries(d.byModel).map(([m,c])=>`<div><div class="n">${c}</div><div class="l">${esc(m.replace('claude-','').replace(/\[.*$/,''))}</div></div>`).join('');
-
-  document.getElementById('projects').innerHTML = d.projects.map(p=>{
+  document.getElementById('projects').innerHTML=d.projects.map(p=>{
     const models=Object.entries(p.models).map(([m,c])=>`${modelBadge(m)}<span class="note"> ×${c}</span>`).join(' ');
     const la=p.lastActivity?new Date(p.lastActivity).toLocaleDateString():'—';
-    const tk2=p.tokens?`<span class="b cnt">${fmt(p.tokens.input+p.tokens.output)} tok</span>`:'';
+    const tk=p.tokens?`<span class="b cnt">${fmt(p.tokens.input+p.tokens.output)} tok</span>`:'';
     return `<div class="card" style="padding:12px"><div class="nm">${esc(p.name)}</div><div class="co">${esc(p.company)}</div>
-      <div class="badges"><span class="b cnt">${p.sessions} session${p.sessions!=1?'s':''}</span>${tk2}</div>
-      <div class="badges">${models}</div><div class="note" style="margin-top:6px">last: ${la}</div></div>`;
-  }).join('');
-
+      <div class="badges"><span class="b cnt">${p.sessions} sess</span>${tk}</div><div class="badges">${models}</div>
+      <div class="note" style="margin-top:6px">last: ${la}</div></div>`;}).join('');
   new Chart(document.getElementById('modelChart'),{type:'doughnut',
     data:{labels:Object.keys(d.byModel).map(m=>m.replace('claude-','').replace(/\[.*$/,'')),
       datasets:[{data:Object.values(d.byModel),backgroundColor:['#7c3aed','#0369a1','#16a34a','#d97706','#dc2626','#6b7280']}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom'}}}});
-
   const pr=d.projects.filter(p=>!['personal','other'].includes(p.id));
   new Chart(document.getElementById('projChart'),{type:'bar',
     data:{labels:pr.map(p=>p.name),datasets:[{data:pr.map(p=>p.sessions),backgroundColor:'#4f46e5'}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{precision:0}}}}});
-
-  document.getElementById('sessions').innerHTML = d.sessions.slice(0,15).map(s=>
+  document.getElementById('sessions').innerHTML=d.sessions.slice(0,15).map(s=>
     `<div class="row"><div style="flex:1;min-width:0"><div class="ti">${esc(s.title)}</div>
-     <div class="mt">${esc(s.projectName)} · ${s.lastActivityAt?new Date(s.lastActivityAt).toLocaleDateString():'—'}</div></div>
-     ${modelBadge(s.model)}</div>`).join('');
-});
+     <div class="mt">${esc(s.projectName)} · ${s.lastActivityAt?new Date(s.lastActivityAt).toLocaleDateString():'—'}</div></div>${modelBadge(s.model)}</div>`).join('');
+}).catch(()=>{});
 </script>
 </body>
 </html>
