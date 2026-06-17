@@ -68,6 +68,21 @@ a.srclink{color:var(--accent);text-decoration:none;font-size:12px}
 .warn{background:#fff8e6;border:1px solid #f3e0a8;color:#8a6d1a;padding:8px 10px;border-radius:8px;font-size:12px;margin-bottom:12px}
 .warn.ok{background:#eef9f1;border-color:#cdeed5;color:#1b6b35}
 canvas{max-height:220px}
+/* workflows */
+.act{font-size:10px;font-weight:700;padding:1px 7px;border-radius:999px}
+.act.ai{background:#eef0fe;color:var(--accent)}.act.you{background:#fff1e0;color:var(--warm)}.act.both{background:#eafaf0;color:var(--green)}
+.wfhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.wstep{border-left:4px solid var(--accent);background:#fcfcfd;border-radius:8px;padding:8px 11px;margin-top:8px;display:flex;gap:10px;align-items:flex-start}
+.wstep.you{border-left-color:var(--warm)}.wstep.both{border-left-color:var(--green)}
+.wstep .num{font-weight:700;color:var(--muted);font-size:12px;min-width:16px}
+.wstep .wl{font-weight:600;font-size:13px}
+.wstep .wmeta{font-size:11px;color:var(--muted);margin-top:2px}
+.gauge{min-width:160px;text-align:right}.gauge .gv{font-size:24px;font-weight:700;line-height:1}
+.gauge .gbar{height:8px;border-radius:5px;background:#eceef2;overflow:hidden;margin-top:5px}.gauge .gbar>i{display:block;height:100%}
+.insight{background:#f7f8ff;border:1px solid #e4e7fb;border-radius:8px;padding:9px 11px;font-size:12px;margin-top:12px}
+.sug{font-size:12px;padding:6px 0;border-bottom:1px dashed var(--line)}.sug:last-child{border:none}
+.newidea{border:1px solid var(--line);border-radius:9px;padding:10px;margin-bottom:8px}
+.newidea .nt{font-weight:600;font-size:13px}.newidea .nb{font-size:11px;color:var(--muted);margin-top:2px}
 </style>
 </head>
 <body>
@@ -76,6 +91,7 @@ canvas{max-height:220px}
     <div><h1>Jarvis — Command Center</h1><div class="sub" id="sub">Loading…</div></div>
     <div class="tabs">
       <button class="tab active" data-tab="mission">Mission Control</button>
+      <button class="tab" data-tab="workflows">Workflows</button>
       <button class="tab" data-tab="ai">AI Activity</button>
     </div>
   </div>
@@ -111,6 +127,19 @@ canvas{max-height:220px}
     </div>
     <div class="section"><div class="card"><h2>Recent sessions</h2><div id="sessions"></div></div></div>
   </div>
+
+  <!-- ===== WORKFLOWS ===== -->
+  <div id="tab-workflows" class="hidden">
+    <div class="section"><div class="card">
+      <h2>Workflow templates</h2>
+      <div class="note">Purpose-based playbooks. <span class="act ai">AI</span> = Claude does it · <span class="act you">You</span> = manual / green-light / fix · <span class="act both">Both</span> = collaborative. The <b>Cyber Metric</b> rates automation — higher means less of your hands.</div>
+    </div></div>
+    <div id="wflist"></div>
+    <div class="section"><div class="card">
+      <h2>💡 New workflow ideas — from your tasks &amp; AI usage</h2>
+      <div id="wfnew"></div>
+    </div></div>
+  </div>
 </div>
 
 <!-- task workflow modal -->
@@ -124,11 +153,11 @@ const fmt=n=>n>=1000?(n/1000).toFixed(1)+'k':n;
 const modelBadge=m=>{const s=(m||'').toLowerCase();const c=s.includes('opus')?'op':s.includes('sonnet')?'so':'';return `<span class="b ${c}">${esc(s.replace('claude-','').replace(/\[.*$/,''))}</span>`;};
 
 // ---- tabs ----
+const TABS=['mission','workflows','ai'];
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
   b.classList.add('active');
-  document.getElementById('tab-mission').classList.toggle('hidden',b.dataset.tab!=='mission');
-  document.getElementById('tab-ai').classList.toggle('hidden',b.dataset.tab!=='ai');
+  TABS.forEach(t=>document.getElementById('tab-'+t).classList.toggle('hidden',t!==b.dataset.tab));
 });
 
 // ================= TASK HEAT (knows what matters to Temo) =================
@@ -215,6 +244,34 @@ function openTask(t){
 function closeModal(){document.getElementById('overlay').classList.remove('show');}
 function copyPrompt(){const t=document.getElementById('pbox').innerText;navigator.clipboard&&navigator.clipboard.writeText(t);const b=event.target;b.textContent='Copied ✓';setTimeout(()=>b.textContent='Copy prompt',1500);}
 document.getElementById('overlay').onclick=e=>{if(e.target.id==='overlay')closeModal();};
+
+// ================= WORKFLOWS =================
+function cyber(steps){const w={ai:1,both:0.5,you:0};const s=steps.reduce((a,x)=>a+(w[x.actor]||0),0);return Math.round(100*s/steps.length);}
+function cyberBand(m){return m>=80?{l:'Near-autonomous',c:'var(--green)'}:m>=60?{l:'Mostly automated',c:'var(--accent)'}:m>=40?{l:'Balanced',c:'var(--warm)'}:{l:'Manual-heavy',c:'var(--hot)'};}
+fetch('./workflows.json?_='+Date.now()).then(r=>r.json()).then(w=>{
+  document.getElementById('wflist').innerHTML=(w.workflows||[]).map(wf=>{
+    const m=cyber(wf.steps),band=cyberBand(m);
+    const steps=wf.steps.map((s,i)=>`<div class="wstep ${s.actor}"><span class="num">${i+1}</span><div>
+      <div class="wl">${esc(s.what)} <span class="act ${s.actor}">${s.actor==='ai'?'AI':s.actor==='you'?'You':'Both'}</span></div>
+      <div class="wmeta">${esc(s.where)} — ${esc(s.how)}</div></div></div>`).join('');
+    const sug=(wf.suggestions||[]).map(x=>`<div class="sug">→ ${esc(x)}</div>`).join('');
+    return `<div class="section"><div class="card">
+      <div class="wfhead">
+        <div><div class="nm">${esc(wf.name)}</div><div class="co">${esc(wf.purpose)}</div>
+          <div class="note" style="margin-top:3px">When: ${esc(wf.when||'')}</div></div>
+        <div class="gauge"><div class="gv" style="color:${band.c}">${m}</div>
+          <div class="note">Cyber Metric · ${band.l}</div>
+          <div class="gbar"><i style="width:${m}%;background:${band.c}"></i></div></div>
+      </div>
+      ${steps}
+      <div class="insight">🧠 ${esc(wf.insight)}</div>
+      <div style="margin-top:10px"><div class="note" style="margin-bottom:2px">Push it more autonomous:</div>${sug}</div>
+    </div></div>`;
+  }).join('');
+  document.getElementById('wfnew').innerHTML=(w.newSuggestions||[]).map(n=>
+    `<div class="newidea"><div class="nt">${esc(n.title)}</div><div class="nb">Basis: ${esc(n.basis)}</div>
+     <div style="font-size:12px;margin-top:4px">${esc(n.idea)}</div></div>`).join('');
+}).catch(()=>{document.getElementById('wflist').innerHTML='<div class="note">workflows.json not loaded yet</div>';});
 
 // ================= RENDER: external tasks (heat-aware, clickable) =================
 const GROUPS=[{k:'unstarted',l:'To do',dot:'needs'},{k:'started',l:'In progress',dot:'prog'},{k:'completed',l:'Done',dot:'done'}];
