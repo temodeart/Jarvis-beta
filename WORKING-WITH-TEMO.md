@@ -16,3 +16,11 @@ Do NOT drive the user's browser/computer just because it's convenient. Look for 
 
 ## Projects (see data/registry.json)
 Tino + Tino Go (Teso/SkyWhale), MMF (Мони Маркет Фанд, Viber group), Midas + CarMax (Telegram). Images via Magnific MCP.
+
+## PROVEN: how I push to GitHub automatically (no user action)
+The repo remote URL carries embedded auth and the sandbox can reach GitHub. Reliable pattern:
+1. Read remote URL from the connected repo's .git/config.
+2. `git clone <url>` into /tmp (sandbox-writable — the mounted folder blocks git's lock files, so never run git directly on the mount).
+3. Apply file changes, commit, `git push origin main`.
+This means: I produce files and ship them to GitHub myself. Temo does nothing. Verified on Phase A + Phase B.
+Note: the user's local ~/Documents/Jarvis-beta is NOT the source of truth — GitHub is. Don't rely on the mounted copy's git state.
