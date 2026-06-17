@@ -1,6 +1,7 @@
 {
-  "_comment": "Workflow templates. actor: ai = Claude does it · you = manual/green-light/fix · both = collaborative. Cyber Metric is computed client-side from step actors (higher = more automated).",
+  "_comment": "Workflow templates. actor: ai = Claude does it · you = manual/green-light/fix · both = collaborative. Cyber Metric computed client-side. Each step has detail (what/why-manual/how-automated) + improve (how to push it, balancing automation, quality, throughput).",
   "updated": "2026-06-17",
+  "philosophy": "Goal isn't max automation — it's max quality output at volume, keeping you in the loop only where judgment changes the outcome.",
   "workflows": [
     {
       "id": "da-cl",
@@ -8,17 +9,29 @@
       "purpose": "Turn an idea or spec into production-ready Figma screens.",
       "when": "Building or updating app/web screens for any brand.",
       "steps": [
-        { "actor": "ai", "where": "Claude Design (DA)", "what": "Generate the screen as JSX + design tokens", "how": "DA designs from the spec + the brand's CLAUDE.md context" },
-        { "actor": "you", "where": "You", "what": "Review the design direction & green-light", "how": "Approve or redirect BEFORE any build — the cheap gate that prevents rework" },
-        { "actor": "ai", "where": "exports/ bundle", "what": "Emit the DA→CL bundle (contract)", "how": "Deterministic handoff package the builder consumes" },
-        { "actor": "ai", "where": "figma-builder (CL)", "what": "Build native Figma frames with real auto-layout", "how": "CL reads the bundle and builds via the Figma MCP" },
-        { "actor": "you", "where": "You · Figma", "what": "QA in Figma, fix nits", "how": "Visual check; spacing/token corrections — your main manual cost" },
-        { "actor": "both", "where": "Cowork", "what": "Iterate on flagged items", "how": "You flag, AI fixes, repeat until clean" }
+        { "actor": "ai", "where": "Claude Design (DA)", "what": "Generate the screen as JSX + design tokens", "how": "DA designs from the spec + the brand's CLAUDE.md context",
+          "detail": "The Design Agent produces a working screen as code (JSX) plus design tokens, using the brand's CLAUDE.md so it starts on-brand. Automated because generating structured, on-brand layouts from a spec is exactly what a strong model does well at volume.",
+          "improve": "Feed DA a tighter spec template and the brand's component list up front — fewer rounds, higher first-pass quality. Quality lever: the better the brand context, the less you fix later." },
+        { "actor": "you", "where": "You", "what": "Review the design direction & green-light", "how": "Approve or redirect BEFORE any build — the cheap gate that prevents rework",
+          "detail": "Manual ON PURPOSE. This is a taste/judgment call — does the direction match intent and brand feel? A model can't reliably own this, and catching a wrong direction here costs seconds vs. hours after a full build.",
+          "improve": "Keep it manual, but make it faster: have DA present 2–3 thumbnails side-by-side so you decide in one glance instead of reading code. This is a quality gate — don't automate it away, speed it up." },
+        { "actor": "ai", "where": "exports/ bundle", "what": "Emit the DA→CL bundle (contract)", "how": "Deterministic handoff package the builder consumes",
+          "detail": "A deterministic packaging step — DA writes a structured bundle that the builder reads. Fully automated because it's mechanical (no judgment), and a strict contract means errors are caught, not guessed around.",
+          "improve": "Already near-perfect. Add a one-line bundle summary in plain language so you can sanity-check what's being handed off without reading the file." },
+        { "actor": "ai", "where": "figma-builder (CL)", "what": "Build native Figma frames with real auto-layout", "how": "CL reads the bundle and builds via the Figma MCP",
+          "detail": "The builder turns the bundle into real Figma frames using its validated kit of components. Automated — and cheap, because the hard design decisions were already made; this is execution. It only rebuilds screens that changed.",
+          "improve": "Route this to Sonnet (not Opus) — it's execution, not reasoning. Throughput lever: cheaper + faster per screen means you can build far more screens for the same cost." },
+        { "actor": "you", "where": "You · Figma", "what": "QA in Figma, fix nits", "how": "Visual check; spacing/token corrections — your main manual cost",
+          "detail": "Manual today: you eyeball the built frames and fix small things (spacing, a wrong token). It's manual because pixel-level 'does this feel right' is still a human call — but a lot of it is mechanical and could be pre-checked.",
+          "improve": "Add an AI self-QA step before yours: have the builder list changed frames + flag any off-token values automatically. That shrinks your review to real taste calls — protects quality while cutting your time." },
+        { "actor": "both", "where": "Cowork", "what": "Iterate on flagged items", "how": "You flag, AI fixes, repeat until clean",
+          "detail": "Collaborative loop: you point at what's off, AI fixes it. Shared because you bring the judgment of what's wrong, AI brings the speed of fixing it.",
+          "improve": "Batch your flags into one list and let AI fix them all in a single pass (per the prompt-batch SOP) instead of one-by-one — more throughput, same quality." }
       ],
-      "insight": "Two human gates: direction (high value — kills rework early) and QA (your biggest manual cost). The middle is fully automated once the bundle contract holds.",
+      "insight": "Two human gates: direction (high value — kills rework early) and QA (your biggest manual cost). Keep the direction gate; shrink the QA gate with AI pre-checks.",
       "suggestions": [
-        "Add an AI self-QA step (list changed frames + flag off-token values) before your QA to shrink manual review.",
-        "Route the build step to Sonnet, not Opus — it's execution, not reasoning (see MODEL-ROUTING).",
+        "Add an AI self-QA step (list changed frames + flag off-token values) before your QA.",
+        "Route the build step to Sonnet, not Opus — execution, not reasoning.",
         "Template the spec intake so DA starts with less back-and-forth."
       ]
     },
@@ -28,18 +41,30 @@
       "purpose": "Produce on-brand marketing imagery / posters.",
       "when": "Posters, media kits, store previews, campaign assets.",
       "steps": [
-        { "actor": "both", "where": "Cowork", "what": "Define the brief (channel, size, message)", "how": "You set intent; AI fills gaps from brand context" },
-        { "actor": "ai", "where": "Magnific MCP", "what": "Generate or source imagery", "how": "AI generates via Magnific — or pulls from its non-AI stock library when a real photo fits" },
-        { "actor": "ai", "where": "canvas-design", "what": "Lay out 2–3 on-brand variants", "how": "AI composes using brand tokens/palette" },
-        { "actor": "you", "where": "You", "what": "Review & green-light", "how": "Pick a direction or request tweaks" },
-        { "actor": "both", "where": "Telegram (planned)", "what": "Send to lead for approval", "how": "AI sends after your green-light (AI→you→lead)" },
-        { "actor": "ai", "where": "Cowork", "what": "Apply feedback & finalize", "how": "AI iterates on the notes" }
+        { "actor": "both", "where": "Cowork", "what": "Define the brief (channel, size, message)", "how": "You set intent; AI fills gaps from brand context",
+          "detail": "You provide the intent (what, where it runs, the message); AI fills in specs from brand context. Shared because intent is yours, but the boilerplate (dimensions, safe areas, brand palette) is automatable.",
+          "improve": "Save per-channel spec presets (IG story, Play Store, billboard) so the brief becomes one line. Throughput lever: faster briefs = more assets shipped." },
+        { "actor": "ai", "where": "Magnific MCP", "what": "Generate or source imagery", "how": "AI generates via Magnific — or pulls from its non-AI stock library when a real photo fits",
+          "detail": "AI creates imagery with Magnific, or pulls a real photo from its stock library when that's better. Automated because generating/searching visual options at volume is a model+tool strength.",
+          "improve": "Generate a small grid of options at once, not one image — gives you more to pick from per cycle (quantity) without more of your time." },
+        { "actor": "ai", "where": "canvas-design", "what": "Lay out 2–3 on-brand variants", "how": "AI composes using brand tokens/palette",
+          "detail": "AI arranges the imagery + copy into finished, on-brand layouts. Automated using your brand tokens, so variants stay consistent.",
+          "improve": "Once a layout wins, save it as a template so future assets skip straight to filled-in variants — compounding quality and speed." },
+        { "actor": "you", "where": "You", "what": "Review & green-light", "how": "Pick a direction or request tweaks",
+          "detail": "Manual on purpose: which option is actually good is taste. AI can rank, but the final creative call is yours.",
+          "improve": "Keep it manual — but have AI pre-rank the variants with a one-line rationale each, so you choose faster. A quality gate worth keeping." },
+        { "actor": "both", "where": "Telegram (planned)", "what": "Send to lead for approval", "how": "AI sends after your green-light (AI→you→lead)",
+          "detail": "Today it's manual relaying. With the Telegram bot, AI sends to the right lead after your green-light and collects their response. Shared because you stay the gate; the routing is automated.",
+          "improve": "Build the Telegram bot — turns this from manual relaying into automated routing with you as the one-tap gate." },
+        { "actor": "ai", "where": "Cowork", "what": "Apply feedback & finalize", "how": "AI iterates on the notes",
+          "detail": "AI applies the lead's notes and produces final files. Automated — it's execution against clear feedback.",
+          "improve": "Have AI export all final sizes/formats in one go so nothing is left manual at the finish line." }
       ],
-      "insight": "Your newest workflow. Highly automated except the creative green-light. Magnific's stock library lets you skip generation entirely when a real photo is better.",
+      "insight": "Your newest workflow. Highly automated except the creative green-light. The Telegram bot is the single biggest lever to raise its Cyber Metric.",
       "suggestions": [
-        "Save winning layouts as reusable templates to skip the layout step next time.",
-        "Pre-define asset specs per channel so the brief becomes one line.",
-        "Once the Telegram bot ships, steps 5–6 run hands-off pending your gate."
+        "Save winning layouts as reusable templates.",
+        "Pre-define asset specs per channel so the brief is one line.",
+        "Ship the Telegram bot to automate the lead loop."
       ]
     },
     {
@@ -48,22 +73,32 @@
       "purpose": "Evaluate a product and produce prioritized, actionable fixes.",
       "when": "Recurring product reviews (e.g. Tino UX Audit).",
       "steps": [
-        { "actor": "ai", "where": "Cowork", "what": "Gather screens/flows + the design system", "how": "AI pulls the current state" },
-        { "actor": "ai", "where": "design-critique + a11y", "what": "Heuristic + accessibility pass", "how": "AI flags issues with severity" },
-        { "actor": "ai", "where": "Cowork", "what": "Cluster & rank issues by user impact", "how": "AI groups into themes" },
-        { "actor": "you", "where": "You", "what": "Validate priorities", "how": "Your only real input — confirm or reorder" },
-        { "actor": "ai", "where": "Linear / Notion", "what": "Create a sub-task per fix", "how": "AI files issues straight into your task board" }
+        { "actor": "ai", "where": "Cowork", "what": "Gather screens/flows + the design system", "how": "AI pulls the current state",
+          "detail": "AI collects the current screens, flows, and the design system to review against. Automated — it's data gathering.",
+          "improve": "Point it at the live Figma file once and let it pull automatically each cycle." },
+        { "actor": "ai", "where": "design-critique + a11y", "what": "Heuristic + accessibility pass", "how": "AI flags issues with severity",
+          "detail": "AI runs usability heuristics + an accessibility check and flags issues with severity. Automated because it's pattern-matching against known principles — a model strength done at volume.",
+          "improve": "Feed it your own past audit notes so it learns your standards — quality compounds over cycles." },
+        { "actor": "ai", "where": "Cowork", "what": "Cluster & rank issues by user impact", "how": "AI groups into themes",
+          "detail": "AI groups raw issues into themes and ranks by likely user impact, so you see signal not noise. Automated synthesis.",
+          "improve": "Have it tie each theme to a metric or user goal so ranking reflects business value, not just count." },
+        { "actor": "you", "where": "You", "what": "Validate priorities", "how": "Your only real input — confirm or reorder",
+          "detail": "Manual: you confirm or reorder the priority list. Manual because you know the business context (what's strategic this quarter) that the model doesn't.",
+          "improve": "Keep it — but give AI your current priorities/OKRs as context so its first draft already matches, leaving you a quick confirm." },
+        { "actor": "ai", "where": "Linear / Notion", "what": "Create a sub-task per fix", "how": "AI files issues straight into your task board",
+          "detail": "AI writes each agreed fix into Linear/Notion as a task, so the audit turns into action automatically.",
+          "improve": "Auto-tag project + heat so new issues appear correctly ranked on your Mission Control board." }
       ],
-      "insight": "Nearly autonomous — your one input is validating priorities. Strong candidate to put on a recurring schedule.",
+      "insight": "Nearly autonomous — your one input is validating priorities. Strong candidate to put on a recurring schedule so quality reviews happen at volume without your time.",
       "suggestions": [
         "Schedule a recurring audit per active product.",
-        "Auto-file the resulting issues into the task board so they appear with heat scores."
+        "Auto-file resulting issues into the task board with heat scores."
       ]
     }
   ],
   "newSuggestions": [
     { "title": "Marketing → lead approval loop", "basis": "You added Magnific + AI→you→lead", "idea": "Wire the Magnific workflow into the Telegram bot so lead approvals + iterations run without you relaying." },
     { "title": "Audit → task board pipeline", "basis": "Tino UX Audit is a hot recurring task", "idea": "Make UX Audit a scheduled workflow that auto-creates heat-scored issues each cycle." },
-    { "title": "Opus → Sonnet rebalancer", "basis": "AI Activity shows Opus-heavy usage", "idea": "A pre-flight checklist that downshifts routine build/QA steps to Sonnet, raising every workflow's efficiency." }
+    { "title": "Opus → Sonnet rebalancer", "basis": "AI Activity shows Opus-heavy usage", "idea": "A pre-flight checklist that downshifts routine build/QA steps to Sonnet, raising every workflow's efficiency without losing quality." }
   ]
 }

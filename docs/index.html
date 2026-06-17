@@ -125,6 +125,11 @@ canvas{max-height:220px}
       <div class="card"><h2>Model mix (cost proxy)</h2><canvas id="modelChart"></canvas></div>
       <div class="card"><h2>Sessions by project</h2><canvas id="projChart"></canvas></div>
     </div>
+    <div class="section"><div class="card">
+      <h2>What your AI is learning</h2>
+      <div class="note" id="skillsintro" style="margin-bottom:10px"></div>
+      <div class="cols" id="skillcards"></div>
+    </div></div>
     <div class="section"><div class="card"><h2>Recent sessions</h2><div id="sessions"></div></div></div>
   </div>
 
@@ -242,6 +247,17 @@ function openTask(t){
   document.getElementById('overlay').classList.add('show');
 }
 function closeModal(){document.getElementById('overlay').classList.remove('show');}
+function openStep(s,wf){
+  const al={ai:'AI — automated',you:'You — manual',both:'Both — collaborative'}[s.actor]||s.actor;
+  const m=document.getElementById('modal');
+  m.innerHTML=`<button class="x" onclick="closeModal()">×</button>
+    <div class="note">${esc(wf||'')}</div>
+    <h3>${esc(s.what)}</h3>
+    <div class="metaline" style="margin-top:6px"><span class="act ${s.actor}">${esc(al)}</span><span class="tag">${esc(s.where)}</span></div>
+    <div class="insight" style="margin-top:12px"><b>What this step is${s.actor==='you'?' — and why it stays manual':s.actor==='ai'?' — and how it is automated':''}</b><br>${esc(s.detail||s.how||'')}</div>
+    <div class="insight" style="margin-top:10px;background:#f3fbf5;border-color:#cdeed5"><b>How to improve it</b><br>${esc(s.improve||'')}</div>`;
+  document.getElementById('overlay').classList.add('show');
+}
 function copyPrompt(){const t=document.getElementById('pbox').innerText;navigator.clipboard&&navigator.clipboard.writeText(t);const b=event.target;b.textContent='Copied ✓';setTimeout(()=>b.textContent='Copy prompt',1500);}
 document.getElementById('overlay').onclick=e=>{if(e.target.id==='overlay')closeModal();};
 
@@ -251,8 +267,8 @@ function cyberBand(m){return m>=80?{l:'Near-autonomous',c:'var(--green)'}:m>=60?
 fetch('./workflows.json?_='+Date.now()).then(r=>r.json()).then(w=>{
   document.getElementById('wflist').innerHTML=(w.workflows||[]).map(wf=>{
     const m=cyber(wf.steps),band=cyberBand(m);
-    const steps=wf.steps.map((s,i)=>`<div class="wstep ${s.actor}"><span class="num">${i+1}</span><div>
-      <div class="wl">${esc(s.what)} <span class="act ${s.actor}">${s.actor==='ai'?'AI':s.actor==='you'?'You':'Both'}</span></div>
+    const steps=wf.steps.map((s,i)=>`<div class="wstep ${s.actor}" style="cursor:pointer" onclick='openStep(${JSON.stringify(s).replace(/'/g,"&#39;")},${JSON.stringify(wf.name).replace(/'/g,"&#39;")})'><span class="num">${i+1}</span><div>
+      <div class="wl">${esc(s.what)} <span class="act ${s.actor}">${s.actor==='ai'?'AI':s.actor==='you'?'You':'Both'}</span> <span class="note" style="font-weight:400">· details ›</span></div>
       <div class="wmeta">${esc(s.where)} — ${esc(s.how)}</div></div></div>`).join('');
     const sug=(wf.suggestions||[]).map(x=>`<div class="sug">→ ${esc(x)}</div>`).join('');
     return `<div class="section"><div class="card">
@@ -272,6 +288,20 @@ fetch('./workflows.json?_='+Date.now()).then(r=>r.json()).then(w=>{
     `<div class="newidea"><div class="nt">${esc(n.title)}</div><div class="nb">Basis: ${esc(n.basis)}</div>
      <div style="font-size:12px;margin-top:4px">${esc(n.idea)}</div></div>`).join('');
 }).catch(()=>{document.getElementById('wflist').innerHTML='<div class="note">workflows.json not loaded yet</div>';});
+
+// ================= WHAT YOUR AI IS LEARNING =================
+fetch('./skills.json?_='+Date.now()).then(r=>r.json()).then(sk=>{
+  document.getElementById('skillsintro').textContent=sk.intro||'';
+  document.getElementById('skillcards').innerHTML=(sk.skills||[]).map(s=>
+    `<div class="card" style="padding:12px">
+      <div class="nm">${esc(s.name)}</div>
+      <div class="co">${esc(s.role)}</div>
+      <div style="font-size:12px;margin-top:8px"><b>Knows:</b> ${esc(s.knows)}</div>
+      <div class="insight" style="margin-top:8px"><b>Learning now:</b> ${esc(s.learning)}</div>
+      <div class="note" style="margin-top:8px">How it grows: ${esc(s.evolves)}</div>
+      <div class="badges"><span class="b">${esc(s.maturity||'')}</span>${s.lastUpdated&&s.lastUpdated!=='—'?`<span class="b cnt">evolved ${esc(s.lastUpdated)}</span>`:''}</div>
+    </div>`).join('');
+}).catch(()=>{});
 
 // ================= RENDER: external tasks (heat-aware, clickable) =================
 const GROUPS=[{k:'unstarted',l:'To do',dot:'needs'},{k:'started',l:'In progress',dot:'prog'},{k:'completed',l:'Done',dot:'done'}];

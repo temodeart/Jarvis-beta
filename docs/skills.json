@@ -1,0 +1,43 @@
+{
+  "_comment": "Plain-language view of what Temo's AI skills know and how they evolve. No code. Refreshable.",
+  "updated": "2026-06-17",
+  "intro": "These are the reusable 'skills' your AI uses. The design builders aren't static — every time they draw frames in Figma they write a run-log and remember each screen's state, so next time they only touch what changed and get faster. Here's what each one knows and how it's growing.",
+  "skills": [
+    {
+      "name": "Tino Figma Builder",
+      "role": "Builds Tino + Tino Go screens in Figma from your Claude Design files.",
+      "knows": "Tino's design tokens, component kit, and the rules for handing a design off to be built (the DA→CL contract).",
+      "learning": "Newest of the three and the one you're actively teaching. It was ported from the proven Midas builder and is still being fitted to real Tino components — so right now it's literally learning Tino's kit and tokens as you run it.",
+      "evolves": "Each run logs what it built and saves every screen's state, so reruns skip unchanged screens and only build what's new.",
+      "lastUpdated": "2026-06-15",
+      "maturity": "v1 — actively training"
+    },
+    {
+      "name": "MMF Figma Builder",
+      "role": "Builds Money Market Fund screens (light + dark) in Figma.",
+      "knows": "MMF's light and dark tokens, components, and the same build-handoff contract.",
+      "learning": "Currently learning your dark-mode token set as you design it — once you approve the dark palette, it absorbs it and can convert screens in cheap batches.",
+      "evolves": "Same engine as Midas: remembers screen state between runs, rebuilds only what changed.",
+      "lastUpdated": "2026-06-14",
+      "maturity": "stable, extending to dark mode"
+    },
+    {
+      "name": "Midas Figma Builder",
+      "role": "Builds Midas Finance + CarMax screens and decks in Figma.",
+      "knows": "Midas + CarMax tokens and components, and the full build pipeline — it's the original, proven one the others were copied from.",
+      "learning": "Mostly mature; it learns incrementally as Midas/CarMax components change.",
+      "evolves": "Keeps a build-state memory and a run history; only rebuilds changed screens.",
+      "lastUpdated": "2026-06-11",
+      "maturity": "proven / reference pipeline"
+    },
+    {
+      "name": "Canvas Design (Marketing)",
+      "role": "Designs posters, media kits, and marketing assets.",
+      "knows": "Layout and composition principles; pairs with Magnific for imagery.",
+      "learning": "Grows as you save winning layouts — each becomes a reusable template it can start from.",
+      "evolves": "Improves by template reuse rather than per-run state.",
+      "lastUpdated": "—",
+      "maturity": "in use"
+    }
+  ]
+}
