@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1781698341611,
+  "generatedAt": 1781709146239,
   "sessionCount": 32,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
@@ -22,7 +22,7 @@
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1781698312402,
+      "lastActivity": 1781704436346,
       "tokens": {
         "input": 0,
         "output": 0
@@ -128,7 +128,7 @@
       "models": {
         "claude-opus-4-8[1m]": 1
       },
-      "lastActivity": 1781690741130,
+      "lastActivity": 1781701077446,
       "tokens": {
         "input": 0,
         "output": 0
@@ -159,8 +159,8 @@
       "model": "claude-opus-4-8[1m]",
       "archived": false,
       "createdAt": 1781691193764,
-      "lastActivityAt": 1781698312402,
-      "enabledMcps": 49,
+      "lastActivityAt": 1781704436346,
+      "enabledMcps": 50,
       "tokens": null
     },
     {
@@ -172,8 +172,8 @@
       "model": "claude-opus-4-8[1m]",
       "archived": false,
       "createdAt": 1781674896068,
-      "lastActivityAt": 1781690741130,
-      "enabledMcps": 49,
+      "lastActivityAt": 1781701077446,
+      "enabledMcps": 50,
       "tokens": null
     },
     {
