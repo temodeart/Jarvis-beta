@@ -1,0 +1,17 @@
+{
+  "_comment": "Central task hub across all projects. Maintained by Claude (push) and Temo (just say 'mark X done', 'add task ...'). status: needs_me | in_progress | blocked | done. owner: ai | temo.",
+  "updated": "2026-06-17",
+  "tasks": [
+    { "id": "t1", "project": "mmf", "title": "Approve dark-mode token set + proof screen before batch convert", "status": "needs_me", "owner": "temo", "priority": "high", "updated": "2026-06-17", "note": "AI has the plan ready; waiting on your green light." },
+    { "id": "t2", "project": "all", "title": "Fill brand CLAUDE.md specifics (stack, repo, Figma links) for each brand", "status": "needs_me", "owner": "temo", "priority": "high", "updated": "2026-06-17", "note": "One-time; stops the repetition." },
+    { "id": "t3", "project": "tino", "title": "Provide Tino design-system repo path + stack for UI/UX audit", "status": "needs_me", "owner": "temo", "priority": "medium", "updated": "2026-06-17" },
+    { "id": "t4", "project": "midas", "title": "Confirm Midas/CarMax deciders + whether CarMax = Midas company", "status": "needs_me", "owner": "temo", "priority": "low", "updated": "2026-06-17" },
+    { "id": "t5", "project": "all", "title": "Install collector auto-refresh (launchd) so the dashboard self-updates", "status": "needs_me", "owner": "temo", "priority": "medium", "updated": "2026-06-17", "note": "See SETUP.md; runs on your Mac because session files live there." },
+    { "id": "t6", "project": "all", "title": "Phase C: decide host for Telegram bot (VPS vs serverless free tier)", "status": "needs_me", "owner": "temo", "priority": "medium", "updated": "2026-06-17" },
+    { "id": "t7", "project": "tino-go", "title": "Driver recruitment poster variants", "status": "in_progress", "owner": "ai", "priority": "medium", "updated": "2026-06-17" },
+    { "id": "t8", "project": "all", "title": "Collect leads' Telegram/Viber handles for bot routing", "status": "blocked", "owner": "temo", "priority": "medium", "updated": "2026-06-17", "note": "Needed before the bot can route; gather alongside Phase C." },
+    { "id": "d1", "project": "all", "title": "Phase A: live command center + real token data on GitHub Pages", "status": "done", "owner": "ai", "priority": "high", "updated": "2026-06-17" },
+    { "id": "d2", "project": "all", "title": "Phase B: workflow hardening (brand memory, model routing, prompt-batch SOP)", "status": "done", "owner": "ai", "priority": "high", "updated": "2026-06-17" },
+    { "id": "d3", "project": "all", "title": "Automated GitHub push from Claude (no terminal, no browser)", "status": "done", "owner": "ai", "priority": "high", "updated": "2026-06-17" }
+  ]
+}
