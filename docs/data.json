@@ -1,11 +1,11 @@
 {
-  "generatedAt": 1781787546878,
-  "sessionCount": 35,
+  "generatedAt": 1781819507596,
+  "sessionCount": 36,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
-    "claude-opus-4-8[1m]": 21,
+    "claude-opus-4-8[1m]": 22,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -65,11 +65,11 @@
       "id": "tino",
       "name": "Tino Superapp",
       "company": "Teso / SkyWhale",
-      "sessions": 3,
+      "sessions": 4,
       "models": {
-        "claude-opus-4-8[1m]": 3
+        "claude-opus-4-8[1m]": 4
       },
-      "lastActivity": 1781757676062,
+      "lastActivity": 1781788431593,
       "tokens": {
         "input": 0,
         "output": 0
@@ -150,6 +150,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_b4b33560-b514-4e5e-b642-b90471a57a77",
+      "title": "Tino.mn redesign notes",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781788338976,
+      "lastActivityAt": 1781788431593,
+      "enabledMcps": 50,
+      "tokens": null
+    },
     {
       "id": "local_829f6908-7131-4716-b82e-f5e790993378",
       "title": "Tino Go driver recruitment poster",
