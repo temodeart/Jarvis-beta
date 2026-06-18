@@ -1,11 +1,11 @@
 {
-  "generatedAt": 1781730754148,
-  "sessionCount": 32,
+  "generatedAt": 1781752989776,
+  "sessionCount": 34,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
-    "claude-opus-4-8[1m]": 18,
+    "claude-opus-4-8[1m]": 20,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -15,14 +15,14 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 11,
+      "sessions": 12,
       "models": {
         "claude-sonnet-4-6": 2,
-        "claude-opus-4-8[1m]": 6,
+        "claude-opus-4-8[1m]": 7,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1781704436346,
+      "lastActivity": 1781745541896,
       "tokens": {
         "input": 0,
         "output": 0
@@ -78,6 +78,20 @@
       }
     },
     {
+      "id": "tino",
+      "name": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "sessions": 2,
+      "models": {
+        "claude-opus-4-8[1m]": 2
+      },
+      "lastActivity": 1781751814379,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "midas",
       "name": "Midas Finance",
       "company": "Midas Finance",
@@ -87,20 +101,6 @@
         "claude-sonnet-4-6": 1
       },
       "lastActivity": 1780919616977,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "tino",
-      "name": "Tino Superapp",
-      "company": "Teso / SkyWhale",
-      "sessions": 1,
-      "models": {
-        "claude-opus-4-8[1m]": 1
-      },
-      "lastActivity": 1781599646983,
       "tokens": {
         "input": 0,
         "output": 0
@@ -128,7 +128,7 @@
       "models": {
         "claude-opus-4-8[1m]": 1
       },
-      "lastActivity": 1781701077446,
+      "lastActivity": 1781752172578,
       "tokens": {
         "input": 0,
         "output": 0
@@ -151,6 +151,45 @@
   ],
   "sessions": [
     {
+      "id": "local_829f6908-7131-4716-b82e-f5e790993378",
+      "title": "Tino Go driver recruitment poster",
+      "project": "tino-go",
+      "projectName": "Tino Go",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781674896068,
+      "lastActivityAt": 1781752172578,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_fe9b2c0c-e58c-471d-b733-b785a700689a",
+      "title": "Tino Map onboarding user research",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781746051478,
+      "lastActivityAt": 1781751814379,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_9be699b6-9dc1-41dc-95b5-394e86beecca",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781741312516,
+      "lastActivityAt": 1781745541896,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
       "id": "local_7e07c663-5977-43fc-82cd-5c1964aac4b5",
       "title": "AI workflow and monitoring hub",
       "project": "other",
@@ -160,19 +199,6 @@
       "archived": false,
       "createdAt": 1781691193764,
       "lastActivityAt": 1781704436346,
-      "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_829f6908-7131-4716-b82e-f5e790993378",
-      "title": "Tino Go driver recruitment poster",
-      "project": "tino-go",
-      "projectName": "Tino Go",
-      "company": "Teso / SkyWhale",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781674896068,
-      "lastActivityAt": 1781701077446,
       "enabledMcps": 50,
       "tokens": null
     },
