@@ -1,24 +1,185 @@
 {
-  "_comment": "Tasks pulled from Linear + Notion (UIUX task tracker-2026, My Tasks view). Refreshed on demand or by a scheduled Cowork task. statusType groups: unstarted=To do, started=In progress, completed=Done.",
-  "updated": "2026-06-17T12:35:00Z",
+  "updated": "2026-06-18T01:18:10Z",
   "sources": {
     "linear": { "ok": true, "workspace": "Temodeart" },
     "notion": { "ok": true, "workspace": "UIUX task tracker-2026" }
   },
   "tasks": [
-    { "source": "linear", "id": "TEM-54", "title": "Review the leftover design works and create issues accordingly", "project": "CarMax Platform", "statusType": "unstarted", "status": "Todo", "priority": "Urgent", "due": null, "url": "https://linear.app/temodeart/issue/TEM-54" },
-    { "source": "linear", "id": "TEM-49", "title": "Payment flow version prototype for discussion & to decide", "project": "CarMax Platform", "statusType": "unstarted", "status": "Todo", "priority": "Medium", "due": "2026-05-11", "url": "https://linear.app/temodeart/issue/TEM-49" },
-    { "source": "linear", "id": "TEM-29", "title": "Make tutorial video", "project": "Mongol Alt", "statusType": "unstarted", "status": "Todo", "priority": "Urgent", "due": "2023-09-26", "url": "https://linear.app/temodeart/issue/TEM-29" },
-    { "source": "linear", "id": "TEM-51", "title": "Home Screen App Version", "project": "CarMax Platform", "statusType": "started", "status": "In Progress", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-51" },
-    { "source": "linear", "id": "TEM-53", "title": "Car Detail Page Responsive", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "Urgent", "due": null, "url": "https://linear.app/temodeart/issue/TEM-53" },
-    { "source": "linear", "id": "TEM-52", "title": "Car List Screen Responsive", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-52" },
-    { "source": "linear", "id": "TEM-50", "title": "Home Screen Responsive", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-50" },
-    { "source": "linear", "id": "TEM-48", "title": "Modals and Popups", "project": "CarMax Platform", "statusType": "completed", "status": "Done", "priority": "High", "due": null, "url": "https://linear.app/temodeart/issue/TEM-48" },
-
-    { "source": "notion", "id": "NTN", "title": "Tino - UX Audit", "project": "Tino", "statusType": "started", "status": "In progress", "priority": "High", "due": "2026-06-15", "url": "https://app.notion.com/p/3807000a10448092a8c9c916070a84da" },
-    { "source": "notion", "id": "NTN", "title": "Tino - Map", "project": "Tino", "statusType": "started", "status": "In progress", "priority": "High", "due": "2026-06-19", "url": "https://app.notion.com/p/37c7000a10448075b810ea3bf1065848" },
-    { "source": "notion", "id": "NTN", "title": "Tino Go - Marketing", "project": "Tino go", "statusType": "unstarted", "status": "Planned", "priority": "Medium", "due": "2026-06-15", "url": "https://app.notion.com/p/3807000a104480dab4f8c6ccde2658c6" },
-    { "source": "notion", "id": "NTN", "title": "Tino - App/Play store Preview update", "project": "Tino (Graphic)", "statusType": "unstarted", "status": "Not started", "priority": null, "due": null, "url": "https://app.notion.com/p/3817000a104480b3be0af5d394c22a26" },
-    { "source": "notion", "id": "NTN", "title": "Tino - Brand/Media Kit", "project": "Tino (Graphic)", "statusType": "unstarted", "status": "Not started", "priority": null, "due": null, "url": "https://app.notion.com/p/3817000a10448086a842e7e6805b8f06" }
+    {
+      "source": "linear",
+      "id": "TEM-49",
+      "title": "Payment flow version prototype for Discussion & to decide",
+      "project": "CarMax Platform",
+      "statusType": "unstarted",
+      "status": "Todo",
+      "priority": "Medium",
+      "due": "2026-05-11",
+      "url": "https://linear.app/temodeart/issue/TEM-49/payment-flow-version-prototype-for-discussion-and-to-decide"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-54",
+      "title": "Review the leftover design works and create issues accordingly",
+      "project": "CarMax Platform",
+      "statusType": "unstarted",
+      "status": "Todo",
+      "priority": "Urgent",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-54/review-the-leftover-design-works-and-create-issues-accordingly"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-29",
+      "title": "Make tutorial video",
+      "project": "Mongol Alt",
+      "statusType": "unstarted",
+      "status": "Todo",
+      "priority": "Urgent",
+      "due": "2023-09-26",
+      "url": "https://linear.app/temodeart/issue/TEM-29/make-tutorial-video"
+    },
+    {
+      "source": "notion",
+      "id": "NTN",
+      "title": "Tino - App/Play store Preview update",
+      "project": "Tino",
+      "statusType": "unstarted",
+      "status": "Not started",
+      "priority": null,
+      "due": null,
+      "url": "https://app.notion.com/p/3817000a104480b3be0af5d394c22a26"
+    },
+    {
+      "source": "notion",
+      "id": "NTN",
+      "title": "Tino - Brand/Media Kit",
+      "project": "Tino",
+      "statusType": "unstarted",
+      "status": "Not started",
+      "priority": null,
+      "due": null,
+      "url": "https://app.notion.com/p/3817000a10448086a842e7e6805b8f06"
+    },
+    {
+      "source": "notion",
+      "id": "NTN",
+      "title": "Tino Go - Marketing",
+      "project": "Tino go",
+      "statusType": "unstarted",
+      "status": "Planned",
+      "priority": "Medium",
+      "due": "2026-06-15",
+      "url": "https://app.notion.com/p/3807000a104480dab4f8c6ccde2658c6"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-51",
+      "title": "Home Screen App Version",
+      "project": "CarMax Platform",
+      "statusType": "started",
+      "status": "In Progress",
+      "priority": "High",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-51/home-screen-app-version"
+    },
+    {
+      "source": "notion",
+      "id": "NTN",
+      "title": "Tino - UX Audit",
+      "project": "Tino",
+      "statusType": "started",
+      "status": "In progress",
+      "priority": "High",
+      "due": "2026-06-15",
+      "url": "https://app.notion.com/p/3807000a10448092a8c9c916070a84da"
+    },
+    {
+      "source": "notion",
+      "id": "NTN",
+      "title": "Tino - Map",
+      "project": "Tino",
+      "statusType": "started",
+      "status": "In progress",
+      "priority": "High",
+      "due": "2026-06-19",
+      "url": "https://app.notion.com/p/37c7000a10448075b810ea3bf1065848"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-53",
+      "title": "Car Detail Page Responsive",
+      "project": "CarMax Platform",
+      "statusType": "completed",
+      "status": "Done",
+      "priority": "Urgent",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-53/car-detail-page-responsive"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-52",
+      "title": "Car List Screen Responsive",
+      "project": "CarMax Platform",
+      "statusType": "completed",
+      "status": "Done",
+      "priority": "High",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-52/car-list-screen-responsive"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-50",
+      "title": "Home Screen Responsive",
+      "project": "CarMax Platform",
+      "statusType": "completed",
+      "status": "Done",
+      "priority": "High",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-50/home-screen-responsive"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-48",
+      "title": "Modals and Popups",
+      "project": "CarMax Platform",
+      "statusType": "completed",
+      "status": "Done",
+      "priority": "High",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-48/modals-and-popups"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-47",
+      "title": "Car Detail Page Design",
+      "project": "CarMax Platform",
+      "statusType": "completed",
+      "status": "Done",
+      "priority": "High",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-47/car-detail-page-design"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-46",
+      "title": "Car List Screen Design",
+      "project": "CarMax Platform",
+      "statusType": "completed",
+      "status": "Done",
+      "priority": "High",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-46/car-list-screen-design"
+    },
+    {
+      "source": "linear",
+      "id": "TEM-45",
+      "title": "Home Screen Design",
+      "project": "CarMax Platform",
+      "statusType": "completed",
+      "status": "Done",
+      "priority": "High",
+      "due": null,
+      "url": "https://linear.app/temodeart/issue/TEM-45/home-screen-design"
+    }
   ]
 }
