@@ -1,11 +1,11 @@
 {
-  "generatedAt": 1781819507596,
-  "sessionCount": 36,
+  "generatedAt": 1781948821682,
+  "sessionCount": 38,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
-    "claude-opus-4-8[1m]": 22,
+    "claude-opus-4-8[1m]": 24,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -15,14 +15,14 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 12,
+      "sessions": 14,
       "models": {
         "claude-sonnet-4-6": 2,
-        "claude-opus-4-8[1m]": 7,
+        "claude-opus-4-8[1m]": 9,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1781745541896,
+      "lastActivity": 1781944824348,
       "tokens": {
         "input": 0,
         "output": 0
@@ -150,6 +150,32 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_17dbe04c-552d-4a10-ba93-ed275fd5f17b",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781944823181,
+      "lastActivityAt": 1781944824348,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_d2ffcdd4-7365-4d4e-a9f5-a6a8ca559814",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781827481850,
+      "lastActivityAt": 1781827487419,
+      "enabledMcps": 50,
+      "tokens": null
+    },
     {
       "id": "local_b4b33560-b514-4e5e-b642-b90471a57a77",
       "title": "Tino.mn redesign notes",
