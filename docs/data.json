@@ -1,11 +1,11 @@
 {
-  "generatedAt": 1781970429259,
-  "sessionCount": 38,
+  "generatedAt": 1782008275535,
+  "sessionCount": 39,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
-    "claude-opus-4-8[1m]": 24,
+    "claude-opus-4-8[1m]": 25,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -15,14 +15,14 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 14,
+      "sessions": 15,
       "models": {
         "claude-sonnet-4-6": 2,
-        "claude-opus-4-8[1m]": 9,
+        "claude-opus-4-8[1m]": 10,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1781944824348,
+      "lastActivity": 1782007249961,
       "tokens": {
         "input": 0,
         "output": 0
@@ -150,6 +150,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_d9d64dc5-d1d1-47c0-9fdc-b38495613a16",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1782007248119,
+      "lastActivityAt": 1782007249961,
+      "enabledMcps": 50,
+      "tokens": null
+    },
     {
       "id": "local_17dbe04c-552d-4a10-ba93-ed275fd5f17b",
       "title": "Sync task board",
