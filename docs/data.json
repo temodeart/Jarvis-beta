@@ -1,6 +1,6 @@
 {
-  "generatedAt": 1782040692921,
-  "sessionCount": 39,
+  "generatedAt": 1782051499072,
+  "sessionCount": 41,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
@@ -8,7 +8,8 @@
     "claude-opus-4-8[1m]": 25,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
-    "unknown": 1
+    "unknown": 1,
+    "claude-opus-4-8": 2
   },
   "projects": [
     {
@@ -92,6 +93,21 @@
       }
     },
     {
+      "id": "carmax",
+      "name": "CarMax",
+      "company": "CarMax",
+      "sessions": 3,
+      "models": {
+        "claude-sonnet-4-6": 1,
+        "claude-opus-4-8": 2
+      },
+      "lastActivity": 1782050750981,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "midas",
       "name": "Midas Finance",
       "company": "Midas Finance",
@@ -133,23 +149,35 @@
         "input": 0,
         "output": 0
       }
-    },
-    {
-      "id": "carmax",
-      "name": "CarMax",
-      "company": "CarMax",
-      "sessions": 1,
-      "models": {
-        "claude-sonnet-4-6": 1
-      },
-      "lastActivity": 1774966730663,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
     }
   ],
   "sessions": [
+    {
+      "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
+      "title": "Can you open figma and go to carmax project?",
+      "project": "carmax",
+      "projectName": "CarMax",
+      "company": "CarMax",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782050646158,
+      "lastActivityAt": 1782050750981,
+      "enabledMcps": 0,
+      "tokens": null
+    },
+    {
+      "id": "local_b36945d9-1062-4133-9b37-deed5b8ed639",
+      "title": "Open Figma CarMax project",
+      "project": "carmax",
+      "projectName": "CarMax",
+      "company": "CarMax",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782050662821,
+      "lastActivityAt": 1782050741658,
+      "enabledMcps": 0,
+      "tokens": null
+    },
     {
       "id": "local_d9d64dc5-d1d1-47c0-9fdc-b38495613a16",
       "title": "Sync task board",
