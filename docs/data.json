@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1782051499072,
+  "generatedAt": 1782062305342,
   "sessionCount": 41,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
@@ -23,7 +23,7 @@
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782007249961,
+      "lastActivity": 1782061731714,
       "tokens": {
         "input": 0,
         "output": 0
@@ -153,6 +153,19 @@
   ],
   "sessions": [
     {
+      "id": "local_d9d64dc5-d1d1-47c0-9fdc-b38495613a16",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1782007248119,
+      "lastActivityAt": 1782061731714,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
       "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
       "title": "Can you open figma and go to carmax project?",
       "project": "carmax",
@@ -176,19 +189,6 @@
       "createdAt": 1782050662821,
       "lastActivityAt": 1782050741658,
       "enabledMcps": 0,
-      "tokens": null
-    },
-    {
-      "id": "local_d9d64dc5-d1d1-47c0-9fdc-b38495613a16",
-      "title": "Sync task board",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1782007248119,
-      "lastActivityAt": 1782007249961,
-      "enabledMcps": 50,
       "tokens": null
     },
     {
