@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1782117859031,
-  "sessionCount": 46,
+  "generatedAt": 1782129316485,
+  "sessionCount": 47,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 29,
     "claude-opus-4-7": 4,
-    "claude-opus-4-8": 3,
+    "claude-opus-4-8": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
   },
@@ -47,6 +47,21 @@
       }
     },
     {
+      "id": "tino",
+      "name": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "sessions": 6,
+      "models": {
+        "claude-opus-4-8[1m]": 5,
+        "claude-opus-4-8": 1
+      },
+      "lastActivity": 1782124023813,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "personal",
       "name": "Personal / Other",
       "company": "—",
@@ -57,20 +72,6 @@
         "claude-fable-5[1m]": 1
       },
       "lastActivity": 1781074881328,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "tino",
-      "name": "Tino Superapp",
-      "company": "Teso / SkyWhale",
-      "sessions": 5,
-      "models": {
-        "claude-opus-4-8[1m]": 5
-      },
-      "lastActivity": 1782090615142,
       "tokens": {
         "input": 0,
         "output": 0
@@ -101,7 +102,7 @@
         "claude-opus-4-8": 1,
         "claude-opus-4-8[1m]": 2
       },
-      "lastActivity": 1782117760517,
+      "lastActivity": 1782125064207,
       "tokens": {
         "input": 0,
         "output": 0
@@ -162,7 +163,20 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782087181534,
-      "lastActivityAt": 1782117760517,
+      "lastActivityAt": 1782125064207,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_d70e4ca7-ce71-49c5-86b3-5e8a5df77703",
+      "title": "Tino UX audit data requirements",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782118661427,
+      "lastActivityAt": 1782124023813,
       "enabledMcps": 50,
       "tokens": null
     },
