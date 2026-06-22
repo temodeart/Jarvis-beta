@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-21T17:08:39Z",
+  "updated": "2026-06-22T00:12:00Z",
   "sources": {
-    "linear": {"ok": false, "workspace": "Temodeart", "error": "Linear connector connection invalidated; user needs to reconnect"},
+    "linear": {"ok": false, "workspace": "Temodeart", "error": "Linear connector not authenticated during scheduled run; user needs to reconnect"},
     "notion": {"ok": true, "workspace": "UIUX task tracker-2026"}
   },
   "tasks": [
