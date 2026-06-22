@@ -1,15 +1,15 @@
 {
-  "generatedAt": 1782107050975,
+  "generatedAt": 1782117859031,
   "sessionCount": 46,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
-    "claude-opus-4-8[1m]": 30,
+    "claude-opus-4-8[1m]": 29,
     "claude-opus-4-7": 4,
+    "claude-opus-4-8": 3,
     "claude-fable-5[1m]": 3,
-    "unknown": 1,
-    "claude-opus-4-8": 2
+    "unknown": 1
   },
   "projects": [
     {
@@ -98,9 +98,10 @@
       "company": "cross-project",
       "sessions": 3,
       "models": {
-        "claude-opus-4-8[1m]": 3
+        "claude-opus-4-8": 1,
+        "claude-opus-4-8[1m]": 2
       },
-      "lastActivity": 1782107001540,
+      "lastActivity": 1782117760517,
       "tokens": {
         "input": 0,
         "output": 0
@@ -158,10 +159,10 @@
       "project": "marketing",
       "projectName": "Marketing / Posters",
       "company": "cross-project",
-      "model": "claude-opus-4-8[1m]",
+      "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782087181534,
-      "lastActivityAt": 1782107001540,
+      "lastActivityAt": 1782117760517,
       "enabledMcps": 50,
       "tokens": null
     },
