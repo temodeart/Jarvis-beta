@@ -1,11 +1,11 @@
 {
-  "generatedAt": 1782083918003,
-  "sessionCount": 41,
+  "generatedAt": 1782096242999,
+  "sessionCount": 44,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
-    "claude-opus-4-8[1m]": 25,
+    "claude-opus-4-8[1m]": 28,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1,
@@ -16,14 +16,14 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 15,
+      "sessions": 16,
       "models": {
         "claude-sonnet-4-6": 2,
-        "claude-opus-4-8[1m]": 10,
+        "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782061731714,
+      "lastActivity": 1782087142702,
       "tokens": {
         "input": 0,
         "output": 0
@@ -66,11 +66,11 @@
       "id": "tino",
       "name": "Tino Superapp",
       "company": "Teso / SkyWhale",
-      "sessions": 4,
+      "sessions": 5,
       "models": {
-        "claude-opus-4-8[1m]": 4
+        "claude-opus-4-8[1m]": 5
       },
-      "lastActivity": 1781788431593,
+      "lastActivity": 1782090615142,
       "tokens": {
         "input": 0,
         "output": 0
@@ -108,6 +108,20 @@
       }
     },
     {
+      "id": "marketing",
+      "name": "Marketing / Posters",
+      "company": "cross-project",
+      "sessions": 2,
+      "models": {
+        "claude-opus-4-8[1m]": 2
+      },
+      "lastActivity": 1782095953072,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "midas",
       "name": "Midas Finance",
       "company": "Midas Finance",
@@ -123,20 +137,6 @@
       }
     },
     {
-      "id": "marketing",
-      "name": "Marketing / Posters",
-      "company": "cross-project",
-      "sessions": 1,
-      "models": {
-        "claude-opus-4-8[1m]": 1
-      },
-      "lastActivity": 1781599511997,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
       "id": "tino-go",
       "name": "Tino Go",
       "company": "Teso / SkyWhale",
@@ -144,7 +144,7 @@
       "models": {
         "claude-opus-4-8[1m]": 1
       },
-      "lastActivity": 1781768445512,
+      "lastActivity": 1782087659334,
       "tokens": {
         "input": 0,
         "output": 0
@@ -152,6 +152,58 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
+      "title": "Poster order and next design",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1782087181534,
+      "lastActivityAt": 1782095953072,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_563f9731-cc25-4b0c-b2d8-12aca017db8a",
+      "title": "Tino.mn product redesign notes",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1782089545222,
+      "lastActivityAt": 1782090615142,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_829f6908-7131-4716-b82e-f5e790993378",
+      "title": "Tino Go driver recruitment poster",
+      "project": "tino-go",
+      "projectName": "Tino Go",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781674896068,
+      "lastActivityAt": 1782087659334,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_50265555-0586-4d37-a03a-918bf26a1863",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1782087014538,
+      "lastActivityAt": 1782087142702,
+      "enabledMcps": 50,
+      "tokens": null
+    },
     {
       "id": "local_d9d64dc5-d1d1-47c0-9fdc-b38495613a16",
       "title": "Sync task board",
@@ -231,19 +283,6 @@
       "tokens": null
     },
     {
-      "id": "local_829f6908-7131-4716-b82e-f5e790993378",
-      "title": "Tino Go driver recruitment poster",
-      "project": "tino-go",
-      "projectName": "Tino Go",
-      "company": "Teso / SkyWhale",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781674896068,
-      "lastActivityAt": 1781768445512,
-      "enabledMcps": 50,
-      "tokens": null
-    },
-    {
       "id": "local_e47cc499-c348-4354-8fc5-3c61008bbd95",
       "title": "Tino Phase 2 design audit",
       "project": "tino",
@@ -305,7 +344,7 @@
       "archived": false,
       "createdAt": 1781505193214,
       "lastActivityAt": 1781599646983,
-      "enabledMcps": 21,
+      "enabledMcps": 50,
       "tokens": null
     },
     {
@@ -461,7 +500,7 @@
       "archived": false,
       "createdAt": 1781030438642,
       "lastActivityAt": 1781030457282,
-      "enabledMcps": 20,
+      "enabledMcps": 50,
       "tokens": null
     },
     {
