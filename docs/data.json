@@ -1,11 +1,11 @@
 {
-  "generatedAt": 1782096242999,
-  "sessionCount": 44,
+  "generatedAt": 1782107050975,
+  "sessionCount": 46,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
-    "claude-opus-4-8[1m]": 28,
+    "claude-opus-4-8[1m]": 30,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1,
@@ -16,14 +16,14 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 16,
+      "sessions": 17,
       "models": {
         "claude-sonnet-4-6": 2,
-        "claude-opus-4-8[1m]": 11,
+        "claude-opus-4-8[1m]": 12,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782087142702,
+      "lastActivity": 1782101102560,
       "tokens": {
         "input": 0,
         "output": 0
@@ -93,6 +93,20 @@
       }
     },
     {
+      "id": "marketing",
+      "name": "Marketing / Posters",
+      "company": "cross-project",
+      "sessions": 3,
+      "models": {
+        "claude-opus-4-8[1m]": 3
+      },
+      "lastActivity": 1782107001540,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "carmax",
       "name": "CarMax",
       "company": "CarMax",
@@ -102,20 +116,6 @@
         "claude-opus-4-8": 2
       },
       "lastActivity": 1782050750981,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "marketing",
-      "name": "Marketing / Posters",
-      "company": "cross-project",
-      "sessions": 2,
-      "models": {
-        "claude-opus-4-8[1m]": 2
-      },
-      "lastActivity": 1782095953072,
       "tokens": {
         "input": 0,
         "output": 0
@@ -161,7 +161,33 @@
       "model": "claude-opus-4-8[1m]",
       "archived": false,
       "createdAt": 1782087181534,
-      "lastActivityAt": 1782095953072,
+      "lastActivityAt": 1782107001540,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_34ed4f91-6ebe-4c8d-8796-80b76ad62c41",
+      "title": "Poster order organization",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1782100626649,
+      "lastActivityAt": 1782101186480,
+      "enabledMcps": 50,
+      "tokens": null
+    },
+    {
+      "id": "local_d0442465-6a82-4d2d-89b2-8939b31e4ae8",
+      "title": "InvestX wallet task review",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1782100592587,
+      "lastActivityAt": 1782101102560,
       "enabledMcps": 50,
       "tokens": null
     },
