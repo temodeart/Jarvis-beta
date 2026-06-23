@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1782193093518,
-  "sessionCount": 51,
+  "generatedAt": 1782203919355,
+  "sessionCount": 52,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 7,
     "claude-opus-4-8[1m]": 28,
     "claude-opus-4-7": 4,
-    "claude-opus-4-8": 8,
+    "claude-opus-4-8": 9,
     "claude-fable-5[1m]": 3,
     "unknown": 1
   },
@@ -79,6 +79,21 @@
       }
     },
     {
+      "id": "marketing",
+      "name": "Marketing / Posters",
+      "company": "cross-project",
+      "sessions": 4,
+      "models": {
+        "claude-opus-4-8": 2,
+        "claude-opus-4-8[1m]": 2
+      },
+      "lastActivity": 1782203724063,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "carmax",
       "name": "CarMax",
       "company": "CarMax",
@@ -104,21 +119,6 @@
         "unknown": 1
       },
       "lastActivity": 1781484891281,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "marketing",
-      "name": "Marketing / Posters",
-      "company": "cross-project",
-      "sessions": 3,
-      "models": {
-        "claude-opus-4-8": 1,
-        "claude-opus-4-8[1m]": 2
-      },
-      "lastActivity": 1782192781378,
       "tokens": {
         "input": 0,
         "output": 0
@@ -155,6 +155,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_de4fd026-0949-4a77-8719-b3dc1e18abc1",
+      "title": "Urgent poster",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782196957200,
+      "lastActivityAt": 1782203724063,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_829f6908-7131-4716-b82e-f5e790993378",
       "title": "Tino Go driver recruitment poster",
@@ -789,19 +802,6 @@
       "archived": false,
       "createdAt": 1778735986006,
       "lastActivityAt": 1778736231710,
-      "enabledMcps": 11,
-      "tokens": null
-    },
-    {
-      "id": "local_7c6be0eb-9d28-4d64-9477-e0f34e4973b3",
-      "title": "Summarize My Ideas",
-      "project": "personal",
-      "projectName": "Personal / Other",
-      "company": "—",
-      "model": "claude-sonnet-4-6",
-      "archived": false,
-      "createdAt": 1777273775308,
-      "lastActivityAt": 1777280323289,
       "enabledMcps": 11,
       "tokens": null
     }
