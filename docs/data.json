@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1782218125284,
-  "sessionCount": 52,
+  "generatedAt": 1782228933788,
+  "sessionCount": 53,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 7,
     "claude-opus-4-8[1m]": 28,
     "claude-opus-4-7": 4,
-    "claude-opus-4-8": 9,
+    "claude-opus-4-8": 10,
     "claude-fable-5[1m]": 3,
     "unknown": 1
   },
@@ -79,6 +79,23 @@
       }
     },
     {
+      "id": "mmf",
+      "name": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "sessions": 4,
+      "models": {
+        "claude-opus-4-8[1m]": 1,
+        "claude-opus-4-7": 1,
+        "claude-opus-4-8": 1,
+        "unknown": 1
+      },
+      "lastActivity": 1782225131460,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "marketing",
       "name": "Marketing / Posters",
       "company": "cross-project",
@@ -87,7 +104,7 @@
         "claude-opus-4-8": 2,
         "claude-opus-4-8[1m]": 2
       },
-      "lastActivity": 1782217635796,
+      "lastActivity": 1782219017209,
       "tokens": {
         "input": 0,
         "output": 0
@@ -103,22 +120,6 @@
         "claude-opus-4-8": 2
       },
       "lastActivity": 1782135320591,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "mmf",
-      "name": "Money Market Fund",
-      "company": "Мони Маркет Фанд",
-      "sessions": 3,
-      "models": {
-        "claude-opus-4-8[1m]": 1,
-        "claude-opus-4-7": 1,
-        "unknown": 1
-      },
-      "lastActivity": 1781484891281,
       "tokens": {
         "input": 0,
         "output": 0
@@ -156,6 +157,32 @@
   ],
   "sessions": [
     {
+      "id": "local_dc130185-4657-423a-b96c-3d07e3655430",
+      "title": "Money Market Fund UX audit",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782221092127,
+      "lastActivityAt": 1782225131460,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_7db0e6fb-b8cb-4d7f-aa99-4347afb3f9e5",
+      "title": "Money Market Fund design workflow",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "unknown",
+      "archived": false,
+      "createdAt": 1781248050213,
+      "lastActivityAt": 1782220538880,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
       "title": "Poster order and next design",
       "project": "marketing",
@@ -164,7 +191,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782087181534,
-      "lastActivityAt": 1782217635796,
+      "lastActivityAt": 1782219017209,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -490,7 +517,7 @@
       "archived": false,
       "createdAt": 1781442976819,
       "lastActivityAt": 1781484891281,
-      "enabledMcps": 20,
+      "enabledMcps": 73,
       "tokens": null
     },
     {
@@ -503,19 +530,6 @@
       "archived": false,
       "createdAt": 1781356200097,
       "lastActivityAt": 1781356263004,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_7db0e6fb-b8cb-4d7f-aa99-4347afb3f9e5",
-      "title": "Money Market Fund design workflow",
-      "project": "mmf",
-      "projectName": "Money Market Fund",
-      "company": "Мони Маркет Фанд",
-      "model": "unknown",
-      "archived": false,
-      "createdAt": 1781248050213,
-      "lastActivityAt": 1781355530552,
       "enabledMcps": 20,
       "tokens": null
     },
@@ -790,19 +804,6 @@
       "createdAt": 1779181761913,
       "lastActivityAt": 1779182266170,
       "enabledMcps": 19,
-      "tokens": null
-    },
-    {
-      "id": "local_8a2c644f-3cc7-4938-95f2-3f54db3c2f45",
-      "title": "Remove duplicate files from folder",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-sonnet-4-6",
-      "archived": false,
-      "createdAt": 1778735986006,
-      "lastActivityAt": 1778736231710,
-      "enabledMcps": 11,
       "tokens": null
     }
   ]
