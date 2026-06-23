@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1782203919355,
+  "generatedAt": 1782218125284,
   "sessionCount": 52,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
@@ -24,7 +24,7 @@
         "claude-fable-5[1m]": 1,
         "claude-opus-4-8": 2
       },
-      "lastActivity": 1782187048897,
+      "lastActivity": 1782216513583,
       "tokens": {
         "input": 0,
         "output": 0
@@ -87,7 +87,7 @@
         "claude-opus-4-8": 2,
         "claude-opus-4-8[1m]": 2
       },
-      "lastActivity": 1782203724063,
+      "lastActivity": 1782217635796,
       "tokens": {
         "input": 0,
         "output": 0
@@ -156,6 +156,32 @@
   ],
   "sessions": [
     {
+      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
+      "title": "Poster order and next design",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782087181534,
+      "lastActivityAt": 1782217635796,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_b66b27eb-9cb6-459a-b43e-9a9d64d8050f",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782187046312,
+      "lastActivityAt": 1782216513583,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_de4fd026-0949-4a77-8719-b3dc1e18abc1",
       "title": "Urgent poster",
       "project": "marketing",
@@ -164,7 +190,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782196957200,
-      "lastActivityAt": 1782203724063,
+      "lastActivityAt": 1782205684206,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -182,19 +208,6 @@
       "tokens": null
     },
     {
-      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
-      "title": "Poster order and next design",
-      "project": "marketing",
-      "projectName": "Marketing / Posters",
-      "company": "cross-project",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782087181534,
-      "lastActivityAt": 1782192781378,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
       "id": "local_ed26d6a6-a283-4ea6-a8a4-74dd90d38b71",
       "title": "Tino UX audit report",
       "project": "tino",
@@ -204,19 +217,6 @@
       "archived": false,
       "createdAt": 1782189202337,
       "lastActivityAt": 1782189770017,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_b66b27eb-9cb6-459a-b43e-9a9d64d8050f",
-      "title": "Sync task board",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782187046312,
-      "lastActivityAt": 1782187048897,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -256,7 +256,7 @@
       "archived": false,
       "createdAt": 1782118661427,
       "lastActivityAt": 1782124023813,
-      "enabledMcps": 50,
+      "enabledMcps": 73,
       "tokens": null
     },
     {
