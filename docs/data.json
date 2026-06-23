@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1782141414584,
-  "sessionCount": 49,
+  "generatedAt": 1782193093518,
+  "sessionCount": 51,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 7,
-    "claude-opus-4-8[1m]": 29,
+    "claude-opus-4-8[1m]": 28,
     "claude-opus-4-7": 4,
-    "claude-opus-4-8": 5,
+    "claude-opus-4-8": 8,
     "claude-fable-5[1m]": 3,
     "unknown": 1
   },
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 18,
+      "sessions": 19,
       "models": {
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 12,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1,
-        "claude-opus-4-8": 1
+        "claude-opus-4-8": 2
       },
-      "lastActivity": 1782136211831,
+      "lastActivity": 1782187048897,
       "tokens": {
         "input": 0,
         "output": 0
@@ -51,12 +51,12 @@
       "id": "tino",
       "name": "Tino Superapp",
       "company": "Teso / SkyWhale",
-      "sessions": 6,
+      "sessions": 7,
       "models": {
         "claude-opus-4-8[1m]": 5,
-        "claude-opus-4-8": 1
+        "claude-opus-4-8": 2
       },
-      "lastActivity": 1782124023813,
+      "lastActivity": 1782189770017,
       "tokens": {
         "input": 0,
         "output": 0
@@ -118,7 +118,7 @@
         "claude-opus-4-8": 1,
         "claude-opus-4-8[1m]": 2
       },
-      "lastActivity": 1782125064207,
+      "lastActivity": 1782192781378,
       "tokens": {
         "input": 0,
         "output": 0
@@ -145,9 +145,9 @@
       "company": "Teso / SkyWhale",
       "sessions": 1,
       "models": {
-        "claude-opus-4-8[1m]": 1
+        "claude-opus-4-8": 1
       },
-      "lastActivity": 1782087659334,
+      "lastActivity": 1782193023696,
       "tokens": {
         "input": 0,
         "output": 0
@@ -155,6 +155,58 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_829f6908-7131-4716-b82e-f5e790993378",
+      "title": "Tino Go driver recruitment poster",
+      "project": "tino-go",
+      "projectName": "Tino Go",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1781674896068,
+      "lastActivityAt": 1782193023696,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
+      "title": "Poster order and next design",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782087181534,
+      "lastActivityAt": 1782192781378,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_ed26d6a6-a283-4ea6-a8a4-74dd90d38b71",
+      "title": "Tino UX audit report",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782189202337,
+      "lastActivityAt": 1782189770017,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_b66b27eb-9cb6-459a-b43e-9a9d64d8050f",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782187046312,
+      "lastActivityAt": 1782187048897,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_6c039a64-4e17-414a-9d5c-59b5593dd6f3",
       "title": "Coal to solar app redesign",
@@ -179,19 +231,6 @@
       "createdAt": 1782134362754,
       "lastActivityAt": 1782135320591,
       "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
-      "title": "Poster order and next design",
-      "project": "marketing",
-      "projectName": "Marketing / Posters",
-      "company": "cross-project",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782087181534,
-      "lastActivityAt": 1782125064207,
-      "enabledMcps": 50,
       "tokens": null
     },
     {
@@ -243,19 +282,6 @@
       "archived": false,
       "createdAt": 1782089545222,
       "lastActivityAt": 1782090615142,
-      "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_829f6908-7131-4716-b82e-f5e790993378",
-      "title": "Tino Go driver recruitment poster",
-      "project": "tino-go",
-      "projectName": "Tino Go",
-      "company": "Teso / SkyWhale",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781674896068,
-      "lastActivityAt": 1782087659334,
       "enabledMcps": 50,
       "tokens": null
     },
@@ -776,19 +802,6 @@
       "archived": false,
       "createdAt": 1777273775308,
       "lastActivityAt": 1777280323289,
-      "enabledMcps": 11,
-      "tokens": null
-    },
-    {
-      "id": "local_4e88ba05-61ee-4b29-b09f-92ca90e6b4f1",
-      "title": "Summarize CarMax Platform wireframes",
-      "project": "carmax",
-      "projectName": "CarMax",
-      "company": "CarMax",
-      "model": "claude-sonnet-4-6",
-      "archived": false,
-      "createdAt": 1774964327862,
-      "lastActivityAt": 1774966730663,
       "enabledMcps": 11,
       "tokens": null
     }
