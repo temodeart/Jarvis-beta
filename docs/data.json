@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1782239742617,
-  "sessionCount": 53,
+  "generatedAt": 1782274801041,
+  "sessionCount": 54,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 7,
     "claude-opus-4-8[1m]": 28,
+    "claude-opus-4-8": 11,
     "claude-opus-4-7": 4,
-    "claude-opus-4-8": 10,
     "claude-fable-5[1m]": 3,
     "unknown": 1
   },
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 19,
+      "sessions": 20,
       "models": {
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 12,
+        "claude-opus-4-8": 3,
         "claude-opus-4-7": 2,
-        "claude-fable-5[1m]": 1,
-        "claude-opus-4-8": 2
+        "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782216513583,
+      "lastActivity": 1782259291403,
       "tokens": {
         "input": 0,
         "output": 0
@@ -104,7 +104,7 @@
         "claude-opus-4-8": 2,
         "claude-opus-4-8[1m]": 2
       },
-      "lastActivity": 1782219017209,
+      "lastActivity": 1782274647354,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +157,32 @@
   ],
   "sessions": [
     {
+      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
+      "title": "Poster order and next design",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782087181534,
+      "lastActivityAt": 1782274647354,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_9a128d40-5953-4823-a76a-966122de163d",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782259289142,
+      "lastActivityAt": 1782259291403,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_dc130185-4657-423a-b96c-3d07e3655430",
       "title": "Money Market Fund UX audit",
       "project": "mmf",
@@ -179,19 +205,6 @@
       "archived": false,
       "createdAt": 1781248050213,
       "lastActivityAt": 1782220538880,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
-      "title": "Poster order and next design",
-      "project": "marketing",
-      "projectName": "Marketing / Posters",
-      "company": "cross-project",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782087181534,
-      "lastActivityAt": 1782219017209,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -790,19 +803,6 @@
       "archived": false,
       "createdAt": 1779209629120,
       "lastActivityAt": 1779211795081,
-      "enabledMcps": 19,
-      "tokens": null
-    },
-    {
-      "id": "local_e52cf748-a79c-4d4b-8b34-1576203803e4",
-      "title": "Fix CV typos and reduce file size",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-7",
-      "archived": false,
-      "createdAt": 1779181761913,
-      "lastActivityAt": 1779182266170,
       "enabledMcps": 19,
       "tokens": null
     }
