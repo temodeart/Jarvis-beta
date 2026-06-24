@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782285611351,
-  "sessionCount": 54,
+  "generatedAt": 1782296421625,
+  "sessionCount": 53,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
-    "claude-sonnet-4-6": 7,
-    "claude-opus-4-8[1m]": 28,
-    "claude-opus-4-8": 11,
+    "claude-sonnet-4-6": 6,
+    "claude-opus-4-8[1m]": 27,
+    "claude-opus-4-8": 12,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,10 +16,10 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 20,
+      "sessions": 19,
       "models": {
         "claude-sonnet-4-6": 2,
-        "claude-opus-4-8[1m]": 12,
+        "claude-opus-4-8[1m]": 11,
         "claude-opus-4-8": 3,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
@@ -79,6 +79,21 @@
       }
     },
     {
+      "id": "marketing",
+      "name": "Marketing / Posters",
+      "company": "cross-project",
+      "sessions": 5,
+      "models": {
+        "claude-opus-4-8": 3,
+        "claude-opus-4-8[1m]": 2
+      },
+      "lastActivity": 1782296198425,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "mmf",
       "name": "Money Market Fund",
       "company": "Мони Маркет Фанд",
@@ -96,30 +111,15 @@
       }
     },
     {
-      "id": "marketing",
-      "name": "Marketing / Posters",
-      "company": "cross-project",
-      "sessions": 4,
-      "models": {
-        "claude-opus-4-8": 2,
-        "claude-opus-4-8[1m]": 2
-      },
-      "lastActivity": 1782279574647,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
       "id": "carmax",
       "name": "CarMax",
       "company": "CarMax",
-      "sessions": 4,
+      "sessions": 3,
       "models": {
-        "claude-sonnet-4-6": 2,
+        "claude-sonnet-4-6": 1,
         "claude-opus-4-8": 2
       },
-      "lastActivity": 1782135320591,
+      "lastActivity": 1782050750981,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,15 +157,15 @@
   ],
   "sessions": [
     {
-      "id": "local_dc130185-4657-423a-b96c-3d07e3655430",
-      "title": "Money Market Fund UX audit",
-      "project": "mmf",
-      "projectName": "Money Market Fund",
-      "company": "Мони Маркет Фанд",
+      "id": "local_16001b87-1969-479a-b725-cad29b593f60",
+      "title": "Powerbank poster",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
       "model": "claude-opus-4-8",
       "archived": false,
-      "createdAt": 1782221092127,
-      "lastActivityAt": 1782283477182,
+      "createdAt": 1782287816945,
+      "lastActivityAt": 1782296198425,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -178,7 +178,20 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782087181534,
-      "lastActivityAt": 1782279574647,
+      "lastActivityAt": 1782292823130,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_dc130185-4657-423a-b96c-3d07e3655430",
+      "title": "Money Market Fund UX audit",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782221092127,
+      "lastActivityAt": 1782283477182,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -274,19 +287,6 @@
       "tokens": null
     },
     {
-      "id": "local_6b28ff36-553b-4fb4-b6b5-db891a7b45f0",
-      "title": "CarMax tasks",
-      "project": "carmax",
-      "projectName": "CarMax",
-      "company": "CarMax",
-      "model": "claude-sonnet-4-6",
-      "archived": false,
-      "createdAt": 1782134362754,
-      "lastActivityAt": 1782135320591,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
       "id": "local_d70e4ca7-ce71-49c5-86b3-5e8a5df77703",
       "title": "Tino UX audit data requirements",
       "project": "tino",
@@ -309,20 +309,7 @@
       "archived": false,
       "createdAt": 1782100626649,
       "lastActivityAt": 1782101186480,
-      "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_d0442465-6a82-4d2d-89b2-8939b31e4ae8",
-      "title": "InvestX wallet task review",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1782100592587,
-      "lastActivityAt": 1782101102560,
-      "enabledMcps": 50,
+      "enabledMcps": 73,
       "tokens": null
     },
     {
@@ -478,7 +465,7 @@
       "archived": false,
       "createdAt": 1781691193764,
       "lastActivityAt": 1781704436346,
-      "enabledMcps": 50,
+      "enabledMcps": 73,
       "tokens": null
     },
     {
@@ -803,6 +790,19 @@
       "archived": false,
       "createdAt": 1779209629120,
       "lastActivityAt": 1779211795081,
+      "enabledMcps": 19,
+      "tokens": null
+    },
+    {
+      "id": "local_e52cf748-a79c-4d4b-8b34-1576203803e4",
+      "title": "Fix CV typos and reduce file size",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-7",
+      "archived": false,
+      "createdAt": 1779181761913,
+      "lastActivityAt": 1779182266170,
       "enabledMcps": 19,
       "tokens": null
     }
