@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782397341939,
-  "sessionCount": 55,
+  "generatedAt": 1782408154414,
+  "sessionCount": 56,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 14,
+    "claude-opus-4-8": 15,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 20,
+      "sessions": 21,
       "models": {
+        "claude-opus-4-8": 5,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
-        "claude-opus-4-8": 4,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782346322600,
+      "lastActivity": 1782405254234,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +157,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_099f708f-98d3-43df-966c-b7da82a204be",
+      "title": "DA export application",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782401357166,
+      "lastActivityAt": 1782405254234,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_d16128a2-f65d-4c41-a0ea-aec0946b822c",
       "title": "DA exports application",
@@ -791,19 +804,6 @@
       "archived": false,
       "createdAt": 1779865027117,
       "lastActivityAt": 1779866889764,
-      "enabledMcps": 19,
-      "tokens": null
-    },
-    {
-      "id": "local_c76dc73d-8bb2-45d4-8a9b-0167cbab7d38",
-      "title": "UX/UI Audit for Money Market Site",
-      "project": "mmf",
-      "projectName": "Money Market Fund",
-      "company": "Мони Маркет Фанд",
-      "model": "claude-opus-4-7",
-      "archived": false,
-      "createdAt": 1778824912357,
-      "lastActivityAt": 1779258633414,
       "enabledMcps": 19,
       "tokens": null
     }
