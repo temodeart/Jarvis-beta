@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782328855204,
-  "sessionCount": 54,
+  "generatedAt": 1782355869497,
+  "sessionCount": 55,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 13,
+    "claude-opus-4-8": 14,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 19,
+      "sessions": 20,
       "models": {
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
-        "claude-opus-4-8": 3,
+        "claude-opus-4-8": 4,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782259310686,
+      "lastActivity": 1782346322600,
       "tokens": {
         "input": 0,
         "output": 0
@@ -42,7 +42,7 @@
         "claude-sonnet-4-6": 1,
         "claude-opus-4-7": 1
       },
-      "lastActivity": 1782321572426,
+      "lastActivity": 1782350818730,
       "tokens": {
         "input": 0,
         "output": 0
@@ -166,7 +166,20 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782311762573,
-      "lastActivityAt": 1782321572426,
+      "lastActivityAt": 1782350818730,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_8e1fb133-c9d9-48ae-82bf-8424e6141c22",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782346313809,
+      "lastActivityAt": 1782346322600,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -791,19 +804,6 @@
       "archived": false,
       "createdAt": 1778824912357,
       "lastActivityAt": 1779258633414,
-      "enabledMcps": 19,
-      "tokens": null
-    },
-    {
-      "id": "local_cc9b5ad5-5294-475f-8003-242666553fb6",
-      "title": "Create Rococo Architecture PowerPoint Presentation",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-7",
-      "archived": false,
-      "createdAt": 1779209629120,
-      "lastActivityAt": 1779211795081,
       "enabledMcps": 19,
       "tokens": null
     }
