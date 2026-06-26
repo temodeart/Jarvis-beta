@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782429780174,
-  "sessionCount": 56,
+  "generatedAt": 1782455167776,
+  "sessionCount": 58,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 15,
+    "claude-opus-4-8": 17,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 21,
+      "sessions": 22,
       "models": {
-        "claude-opus-4-8": 5,
+        "claude-opus-4-8": 6,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782405254234,
+      "lastActivity": 1782432582174,
       "tokens": {
         "input": 0,
         "output": 0
@@ -64,6 +64,21 @@
       }
     },
     {
+      "id": "marketing",
+      "name": "Marketing / Posters",
+      "company": "cross-project",
+      "sessions": 6,
+      "models": {
+        "claude-opus-4-8": 4,
+        "claude-opus-4-8[1m]": 2
+      },
+      "lastActivity": 1782439631205,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "personal",
       "name": "Personal / Other",
       "company": "—",
@@ -74,21 +89,6 @@
         "claude-fable-5[1m]": 1
       },
       "lastActivity": 1781074881328,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "marketing",
-      "name": "Marketing / Posters",
-      "company": "cross-project",
-      "sessions": 5,
-      "models": {
-        "claude-opus-4-8": 3,
-        "claude-opus-4-8[1m]": 2
-      },
-      "lastActivity": 1782300871765,
       "tokens": {
         "input": 0,
         "output": 0
@@ -158,6 +158,58 @@
   ],
   "sessions": [
     {
+      "id": "local_c2a4e25f-6a29-4e14-98c1-a52bb5a12378",
+      "title": "AI workflow demo posters",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782438402899,
+      "lastActivityAt": 1782439631205,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
+      "title": "Poster order and next design",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782087181534,
+      "lastActivityAt": 1782438364883,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_16001b87-1969-479a-b725-cad29b593f60",
+      "title": "Powerbank poster",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782287816945,
+      "lastActivityAt": 1782438321713,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_ca0c2926-b056-4fa0-9607-8fd733f63378",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782432539843,
+      "lastActivityAt": 1782432582174,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_099f708f-98d3-43df-966c-b7da82a204be",
       "title": "DA export application",
       "project": "other",
@@ -192,33 +244,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782346313809,
-      "lastActivityAt": 1782346322600,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_16001b87-1969-479a-b725-cad29b593f60",
-      "title": "Powerbank poster",
-      "project": "marketing",
-      "projectName": "Marketing / Posters",
-      "company": "cross-project",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782287816945,
-      "lastActivityAt": 1782300871765,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_d6f85828-dc4c-47ba-8fa6-6f95df43273b",
-      "title": "Poster order and next design",
-      "project": "marketing",
-      "projectName": "Marketing / Posters",
-      "company": "cross-project",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782087181534,
-      "lastActivityAt": 1782292823130,
+      "lastActivityAt": 1782346340992,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -778,32 +804,6 @@
       "archived": false,
       "createdAt": 1780203289127,
       "lastActivityAt": 1780204034297,
-      "enabledMcps": 19,
-      "tokens": null
-    },
-    {
-      "id": "local_431512e2-3b53-4562-80ac-3d39954fe6fe",
-      "title": "AI design workflow skill",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-opus-4-7",
-      "archived": false,
-      "createdAt": 1779873298435,
-      "lastActivityAt": 1779874324557,
-      "enabledMcps": 19,
-      "tokens": null
-    },
-    {
-      "id": "local_84b18e65-ced8-4783-ad95-b7a9f662c3b5",
-      "title": "Figma MCP connection check",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-sonnet-4-6",
-      "archived": false,
-      "createdAt": 1779865027117,
-      "lastActivityAt": 1779866889764,
       "enabledMcps": 19,
       "tokens": null
     }
