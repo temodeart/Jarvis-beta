@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782455167776,
-  "sessionCount": 58,
+  "generatedAt": 1782472866002,
+  "sessionCount": 59,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 17,
+    "claude-opus-4-8": 18,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -95,6 +95,21 @@
       }
     },
     {
+      "id": "carmax",
+      "name": "CarMax",
+      "company": "CarMax",
+      "sessions": 4,
+      "models": {
+        "claude-opus-4-8": 3,
+        "claude-sonnet-4-6": 1
+      },
+      "lastActivity": 1782460683955,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "mmf",
       "name": "Money Market Fund",
       "company": "Мони Маркет Фанд",
@@ -106,21 +121,6 @@
         "unknown": 1
       },
       "lastActivity": 1782283477182,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "carmax",
-      "name": "CarMax",
-      "company": "CarMax",
-      "sessions": 3,
-      "models": {
-        "claude-sonnet-4-6": 1,
-        "claude-opus-4-8": 2
-      },
-      "lastActivity": 1782050750981,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +157,32 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
+      "title": "there should be v9 on claude design's carmax design system f",
+      "project": "carmax",
+      "projectName": "CarMax",
+      "company": "CarMax",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782050646158,
+      "lastActivityAt": 1782460683955,
+      "enabledMcps": 0,
+      "tokens": null
+    },
+    {
+      "id": "local_2d5d8576-47ef-4336-bad7-844c6df8cc1a",
+      "title": "Apply CarMax export to Figma",
+      "project": "carmax",
+      "projectName": "CarMax",
+      "company": "CarMax",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782457840488,
+      "lastActivityAt": 1782460666534,
+      "enabledMcps": 0,
+      "tokens": null
+    },
     {
       "id": "local_c2a4e25f-6a29-4e14-98c1-a52bb5a12378",
       "title": "AI workflow demo posters",
@@ -415,19 +441,6 @@
       "createdAt": 1782007248119,
       "lastActivityAt": 1782061731714,
       "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
-      "title": "Can you open figma and go to carmax project?",
-      "project": "carmax",
-      "projectName": "CarMax",
-      "company": "CarMax",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782050646158,
-      "lastActivityAt": 1782050750981,
-      "enabledMcps": 0,
       "tokens": null
     },
     {
@@ -791,19 +804,6 @@
       "archived": false,
       "createdAt": 1780417495288,
       "lastActivityAt": 1780417506644,
-      "enabledMcps": 19,
-      "tokens": null
-    },
-    {
-      "id": "local_769ddc23-704a-4509-a8f5-e08e6db27747",
-      "title": "Plan initiation",
-      "project": "personal",
-      "projectName": "Personal / Other",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1780203289127,
-      "lastActivityAt": 1780204034297,
       "enabledMcps": 19,
       "tokens": null
     }
