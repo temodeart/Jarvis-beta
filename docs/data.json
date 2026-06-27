@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782472866002,
-  "sessionCount": 59,
+  "generatedAt": 1782541899560,
+  "sessionCount": 61,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 18,
+    "claude-opus-4-8": 20,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 22,
+      "sessions": 23,
       "models": {
-        "claude-opus-4-8": 6,
+        "claude-opus-4-8": 7,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782432582174,
+      "lastActivity": 1782518703271,
       "tokens": {
         "input": 0,
         "output": 0
@@ -34,15 +34,15 @@
       "id": "skills",
       "name": "Skill / Pipeline dev",
       "company": "internal",
-      "sessions": 8,
+      "sessions": 9,
       "models": {
         "claude-opus-4-8[1m]": 4,
-        "claude-opus-4-8": 1,
+        "claude-opus-4-8": 2,
         "claude-fable-5[1m]": 1,
         "claude-sonnet-4-6": 1,
         "claude-opus-4-7": 1
       },
-      "lastActivity": 1782382480660,
+      "lastActivity": 1782539048191,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +157,32 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_6b30cfc9-8605-40f8-bda9-85efcdff40f9",
+      "title": "Apply exports v9",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782536477600,
+      "lastActivityAt": 1782539048191,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_fcb0762f-3908-4345-8be5-e244f07965f4",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782518673474,
+      "lastActivityAt": 1782518703271,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
       "title": "there should be v9 on claude design's carmax design system f",
@@ -779,32 +805,6 @@
       "createdAt": 1780417444883,
       "lastActivityAt": 1780428791046,
       "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_8f488628-06fa-4982-9ba9-c8aa510d430b",
-      "title": "Mobile app screens",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1780421676866,
-      "lastActivityAt": 1780422470602,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_7b5883cd-7c75-40e4-8d0f-5c7f5eb3f8f0",
-      "title": "Schedule a recurring task",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1780417495288,
-      "lastActivityAt": 1780417506644,
-      "enabledMcps": 19,
       "tokens": null
     }
   ]
