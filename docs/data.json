@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782563528008,
-  "sessionCount": 62,
+  "generatedAt": 1782574344720,
+  "sessionCount": 63,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 21,
+    "claude-opus-4-8": 22,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 23,
+      "sessions": 25,
       "models": {
-        "claude-opus-4-8": 7,
+        "claude-opus-4-8": 9,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782518703271,
+      "lastActivity": 1782570942313,
       "tokens": {
         "input": 0,
         "output": 0
@@ -42,7 +42,7 @@
         "claude-sonnet-4-6": 1,
         "claude-opus-4-7": 1
       },
-      "lastActivity": 1782560648136,
+      "lastActivity": 1782573648325,
       "tokens": {
         "input": 0,
         "output": 0
@@ -95,21 +95,6 @@
       }
     },
     {
-      "id": "carmax",
-      "name": "CarMax",
-      "company": "CarMax",
-      "sessions": 4,
-      "models": {
-        "claude-opus-4-8": 3,
-        "claude-sonnet-4-6": 1
-      },
-      "lastActivity": 1782460683955,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
       "id": "mmf",
       "name": "Money Market Fund",
       "company": "Мони Маркет Фанд",
@@ -121,6 +106,21 @@
         "unknown": 1
       },
       "lastActivity": 1782283477182,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
+      "id": "carmax",
+      "name": "CarMax",
+      "company": "CarMax",
+      "sessions": 3,
+      "models": {
+        "claude-opus-4-8": 2,
+        "claude-sonnet-4-6": 1
+      },
+      "lastActivity": 1782460666534,
       "tokens": {
         "input": 0,
         "output": 0
@@ -166,8 +166,34 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782544030389,
-      "lastActivityAt": 1782560648136,
+      "lastActivityAt": 1782573648325,
       "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
+      "title": "Click on that reset button with callout saying new version r",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782050646158,
+      "lastActivityAt": 1782570942313,
+      "enabledMcps": 0,
+      "tokens": null
+    },
+    {
+      "id": "local_000304d1-1d40-4a46-ac96-0e5ed3c60100",
+      "title": "Check Porkbun webmail",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782570261797,
+      "lastActivityAt": 1782570439948,
+      "enabledMcps": 0,
       "tokens": null
     },
     {
@@ -194,19 +220,6 @@
       "createdAt": 1782518673474,
       "lastActivityAt": 1782518703271,
       "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
-      "title": "there should be v9 on claude design's carmax design system f",
-      "project": "carmax",
-      "projectName": "CarMax",
-      "company": "CarMax",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782050646158,
-      "lastActivityAt": 1782460683955,
-      "enabledMcps": 0,
       "tokens": null
     },
     {
@@ -791,19 +804,6 @@
       "archived": false,
       "createdAt": 1780475784961,
       "lastActivityAt": 1780478649906,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_3a71753f-fc5b-4743-879b-42aa15fbe126",
-      "title": "Combined CARMAX and Midas presentation",
-      "project": "midas",
-      "projectName": "Midas Finance",
-      "company": "Midas Finance",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1780472270280,
-      "lastActivityAt": 1780474416230,
       "enabledMcps": 20,
       "tokens": null
     }
