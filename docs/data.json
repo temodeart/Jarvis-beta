@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782668896284,
-  "sessionCount": 66,
+  "generatedAt": 1782679712490,
+  "sessionCount": 67,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 25,
+    "claude-opus-4-8": 26,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 28,
+      "sessions": 29,
       "models": {
-        "claude-opus-4-8": 12,
+        "claude-opus-4-8": 13,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782668747101,
+      "lastActivity": 1782679657886,
       "tokens": {
         "input": 0,
         "output": 0
@@ -158,6 +158,19 @@
   ],
   "sessions": [
     {
+      "id": "local_fa0a7b38-0f25-439a-8abb-e9351d22a50d",
+      "title": "Design system validation loop issue",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782671614204,
+      "lastActivityAt": 1782679657886,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_98948c65-8755-4a37-91ba-f6e2f166c88b",
       "title": "Export folder application",
       "project": "other",
@@ -166,7 +179,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782636722707,
-      "lastActivityAt": 1782668747101,
+      "lastActivityAt": 1782676421620,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -792,19 +805,6 @@
       "createdAt": 1781030438642,
       "lastActivityAt": 1781030457282,
       "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_de6f9f8e-076e-4882-bc11-672747af6180",
-      "title": "Link preview request",
-      "project": "personal",
-      "projectName": "Personal / Other",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781006422053,
-      "lastActivityAt": 1781006511307,
-      "enabledMcps": 20,
       "tokens": null
     }
   ]
