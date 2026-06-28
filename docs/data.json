@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782614811727,
-  "sessionCount": 63,
+  "generatedAt": 1782625626640,
+  "sessionCount": 65,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 22,
+    "claude-opus-4-8": 24,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 25,
+      "sessions": 27,
       "models": {
-        "claude-opus-4-8": 9,
+        "claude-opus-4-8": 11,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782570942313,
+      "lastActivity": 1782620118987,
       "tokens": {
         "input": 0,
         "output": 0
@@ -42,7 +42,7 @@
         "claude-sonnet-4-6": 1,
         "claude-opus-4-7": 1
       },
-      "lastActivity": 1782581294299,
+      "lastActivity": 1782624020758,
       "tokens": {
         "input": 0,
         "output": 0
@@ -166,7 +166,33 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782544030389,
-      "lastActivityAt": 1782581294299,
+      "lastActivityAt": 1782624020758,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_617daf31-06b5-4ccb-86f6-decb9fa16dc7",
+      "title": "Lane 2 service screens authoring",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782619564784,
+      "lastActivityAt": 1782620118987,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_0b35b252-553b-44ef-a3e1-cd3284be9eed",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782614817618,
+      "lastActivityAt": 1782614822700,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -778,32 +804,6 @@
       "archived": false,
       "createdAt": 1780919482933,
       "lastActivityAt": 1780919616977,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_cfd8ca28-86cc-4820-ad9f-2c5523388b31",
-      "title": "HTML prototype GitHub upload",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1780897186854,
-      "lastActivityAt": 1780897739827,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_de86442f-080b-4bcc-a665-3f3888a8fff3",
-      "title": "Screen inventory and tasks",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-sonnet-4-6",
-      "archived": false,
-      "createdAt": 1780475784961,
-      "lastActivityAt": 1780478649906,
       "enabledMcps": 20,
       "tokens": null
     }
