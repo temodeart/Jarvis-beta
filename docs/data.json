@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782636446494,
-  "sessionCount": 65,
+  "generatedAt": 1782647262636,
+  "sessionCount": 66,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 24,
+    "claude-opus-4-8": 25,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 27,
+      "sessions": 28,
       "models": {
-        "claude-opus-4-8": 11,
+        "claude-opus-4-8": 12,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782620118987,
+      "lastActivity": 1782645228207,
       "tokens": {
         "input": 0,
         "output": 0
@@ -42,7 +42,7 @@
         "claude-sonnet-4-6": 1,
         "claude-opus-4-7": 1
       },
-      "lastActivity": 1782636096067,
+      "lastActivity": 1782636693113,
       "tokens": {
         "input": 0,
         "output": 0
@@ -158,6 +158,19 @@
   ],
   "sessions": [
     {
+      "id": "local_98948c65-8755-4a37-91ba-f6e2f166c88b",
+      "title": "Export folder application",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782636722707,
+      "lastActivityAt": 1782645228207,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_4a85a8e7-75fb-41dd-a81e-55e49065a109",
       "title": "Figma MCP limitations",
       "project": "skills",
@@ -166,7 +179,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782544030389,
-      "lastActivityAt": 1782636096067,
+      "lastActivityAt": 1782636693113,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -791,19 +804,6 @@
       "archived": false,
       "createdAt": 1781006422053,
       "lastActivityAt": 1781006511307,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_a90602dd-4e12-43df-971f-be00b1072ac2",
-      "title": "Midas Finance website structure",
-      "project": "midas",
-      "projectName": "Midas Finance",
-      "company": "Midas Finance",
-      "model": "claude-sonnet-4-6",
-      "archived": false,
-      "createdAt": 1780919482933,
-      "lastActivityAt": 1780919616977,
       "enabledMcps": 20,
       "tokens": null
     }
