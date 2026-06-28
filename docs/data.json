@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782679712490,
-  "sessionCount": 67,
+  "generatedAt": 1782690528786,
+  "sessionCount": 68,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 26,
+    "claude-opus-4-8": 27,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -24,7 +24,7 @@
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782679657886,
+      "lastActivity": 1782686202282,
       "tokens": {
         "input": 0,
         "output": 0
@@ -34,15 +34,15 @@
       "id": "skills",
       "name": "Skill / Pipeline dev",
       "company": "internal",
-      "sessions": 10,
+      "sessions": 11,
       "models": {
         "claude-opus-4-8[1m]": 4,
-        "claude-opus-4-8": 3,
+        "claude-opus-4-8": 4,
         "claude-fable-5[1m]": 1,
         "claude-sonnet-4-6": 1,
         "claude-opus-4-7": 1
       },
-      "lastActivity": 1782636693113,
+      "lastActivity": 1782683909311,
       "tokens": {
         "input": 0,
         "output": 0
@@ -166,7 +166,20 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782671614204,
-      "lastActivityAt": 1782679657886,
+      "lastActivityAt": 1782686202282,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_fff6c539-26f3-45f6-8418-ab7c741dd16f",
+      "title": "Design to Figma conversion solutions",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782681100924,
+      "lastActivityAt": 1782683909311,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -792,19 +805,6 @@
       "createdAt": 1781074844116,
       "lastActivityAt": 1781074881328,
       "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_2c46d4c4-f363-4462-b33c-bda214d5c6fc",
-      "title": "Personal financial strategy",
-      "project": "personal",
-      "projectName": "Personal / Other",
-      "company": "—",
-      "model": "claude-fable-5[1m]",
-      "archived": false,
-      "createdAt": 1781030438642,
-      "lastActivityAt": 1781030457282,
-      "enabledMcps": 50,
       "tokens": null
     }
   ]
