@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1782734887319,
+  "generatedAt": 1782746632804,
   "sessionCount": 70,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
@@ -24,7 +24,7 @@
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782734861150,
+      "lastActivity": 1782738545538,
       "tokens": {
         "input": 0,
         "output": 0
@@ -166,7 +166,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782671614204,
-      "lastActivityAt": 1782734861150,
+      "lastActivityAt": 1782738545538,
       "enabledMcps": 73,
       "tokens": null
     },
