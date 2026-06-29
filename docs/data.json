@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782702433880,
-  "sessionCount": 69,
+  "generatedAt": 1782713251383,
+  "sessionCount": 70,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 28,
+    "claude-opus-4-8": 29,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 30,
+      "sessions": 31,
       "models": {
-        "claude-opus-4-8": 14,
+        "claude-opus-4-8": 15,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782702252170,
+      "lastActivity": 1782710375053,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +157,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_53a29b61-e99e-4854-b350-1a93c9a06bb2",
+      "title": "App redesign scope proposal",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782708023249,
+      "lastActivityAt": 1782710375053,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_fa0a7b38-0f25-439a-8abb-e9351d22a50d",
       "title": "Design system validation loop issue",
@@ -791,19 +804,6 @@
       "archived": false,
       "createdAt": 1781101945166,
       "lastActivityAt": 1781157584212,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_0d156fe4-67be-4bb5-a370-6fbc74b0b37c",
-      "title": "Claude Design to Figma migration",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781081265946,
-      "lastActivityAt": 1781098808688,
       "enabledMcps": 20,
       "tokens": null
     }
