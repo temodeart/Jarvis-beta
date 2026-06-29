@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1782713251383,
+  "generatedAt": 1782724068266,
   "sessionCount": 70,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
@@ -24,7 +24,7 @@
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782710375053,
+      "lastActivity": 1782723380152,
       "tokens": {
         "input": 0,
         "output": 0
@@ -158,6 +158,19 @@
   ],
   "sessions": [
     {
+      "id": "local_fa0a7b38-0f25-439a-8abb-e9351d22a50d",
+      "title": "Design system validation loop issue",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782671614204,
+      "lastActivityAt": 1782723380152,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_53a29b61-e99e-4854-b350-1a93c9a06bb2",
       "title": "App redesign scope proposal",
       "project": "other",
@@ -171,19 +184,6 @@
       "tokens": null
     },
     {
-      "id": "local_fa0a7b38-0f25-439a-8abb-e9351d22a50d",
-      "title": "Design system validation loop issue",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782671614204,
-      "lastActivityAt": 1782702252170,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
       "id": "local_4177afe3-42cb-44fc-b5be-819169031612",
       "title": "Sync task board",
       "project": "other",
@@ -192,7 +192,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1782691475870,
-      "lastActivityAt": 1782691477495,
+      "lastActivityAt": 1782691515122,
       "enabledMcps": 73,
       "tokens": null
     },
