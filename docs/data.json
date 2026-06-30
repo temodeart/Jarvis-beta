@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782768271588,
-  "sessionCount": 70,
+  "generatedAt": 1782779090766,
+  "sessionCount": 71,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 29,
+    "claude-opus-4-8": 30,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 31,
+      "sessions": 32,
       "models": {
-        "claude-opus-4-8": 15,
+        "claude-opus-4-8": 16,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782738545538,
+      "lastActivity": 1782777883109,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +157,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_2fd23ed5-9fc1-4005-93de-b5a7bdf45af1",
+      "title": "Sync task board",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782777881609,
+      "lastActivityAt": 1782777883109,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_fa0a7b38-0f25-439a-8abb-e9351d22a50d",
       "title": "Design system validation loop issue",
@@ -791,19 +804,6 @@
       "archived": false,
       "createdAt": 1781111031434,
       "lastActivityAt": 1781161908618,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_5dca04ab-d9e0-4e07-be12-00297e87fd3f",
-      "title": "Design-to-Figma pipeline system",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-fable-5[1m]",
-      "archived": false,
-      "createdAt": 1781101945166,
-      "lastActivityAt": 1781157584212,
       "enabledMcps": 20,
       "tokens": null
     }
