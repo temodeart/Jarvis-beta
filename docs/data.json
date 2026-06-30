@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782790571558,
-  "sessionCount": 71,
+  "generatedAt": 1782801391995,
+  "sessionCount": 67,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 30,
+    "claude-opus-4-8": 26,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -16,15 +16,15 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 32,
+      "sessions": 28,
       "models": {
-        "claude-opus-4-8": 16,
+        "claude-opus-4-8": 12,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782777883109,
+      "lastActivity": 1782738545538,
       "tokens": {
         "input": 0,
         "output": 0
@@ -158,19 +158,6 @@
   ],
   "sessions": [
     {
-      "id": "local_2fd23ed5-9fc1-4005-93de-b5a7bdf45af1",
-      "title": "Sync task board",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782777881609,
-      "lastActivityAt": 1782777883109,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
       "id": "local_fa0a7b38-0f25-439a-8abb-e9351d22a50d",
       "title": "Design system validation loop issue",
       "project": "other",
@@ -193,19 +180,6 @@
       "archived": false,
       "createdAt": 1782708023249,
       "lastActivityAt": 1782710375053,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_4177afe3-42cb-44fc-b5be-819169031612",
-      "title": "Sync task board",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782691475870,
-      "lastActivityAt": 1782691515122,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -262,19 +236,6 @@
       "tokens": null
     },
     {
-      "id": "local_0b35b252-553b-44ef-a3e1-cd3284be9eed",
-      "title": "Sync task board",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782614817618,
-      "lastActivityAt": 1782614846981,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
       "id": "local_ditto_988aa6e0-d5d3-44d5-ba86-16b0cee82171",
       "title": "Click on that reset button with callout saying new version r",
       "project": "other",
@@ -310,19 +271,6 @@
       "archived": false,
       "createdAt": 1782536477600,
       "lastActivityAt": 1782539048191,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_fcb0762f-3908-4345-8be5-e244f07965f4",
-      "title": "Sync task board",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8",
-      "archived": false,
-      "createdAt": 1782518673474,
-      "lastActivityAt": 1782518703271,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -805,6 +753,58 @@
       "createdAt": 1781111031434,
       "lastActivityAt": 1781161908618,
       "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_5dca04ab-d9e0-4e07-be12-00297e87fd3f",
+      "title": "Design-to-Figma pipeline system",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-fable-5[1m]",
+      "archived": false,
+      "createdAt": 1781101945166,
+      "lastActivityAt": 1781157584212,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_0d156fe4-67be-4bb5-a370-6fbc74b0b37c",
+      "title": "Claude Design to Figma migration",
+      "project": "skills",
+      "projectName": "Skill / Pipeline dev",
+      "company": "internal",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781081265946,
+      "lastActivityAt": 1781098808688,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_eb2710a6-f356-423c-bf0c-f2689ee97e86",
+      "title": "Medication schedule with work",
+      "project": "personal",
+      "projectName": "Personal / Other",
+      "company": "—",
+      "model": "claude-opus-4-8[1m]",
+      "archived": false,
+      "createdAt": 1781074844116,
+      "lastActivityAt": 1781074881328,
+      "enabledMcps": 20,
+      "tokens": null
+    },
+    {
+      "id": "local_2c46d4c4-f363-4462-b33c-bda214d5c6fc",
+      "title": "Personal financial strategy",
+      "project": "personal",
+      "projectName": "Personal / Other",
+      "company": "—",
+      "model": "claude-fable-5[1m]",
+      "archived": false,
+      "createdAt": 1781030438642,
+      "lastActivityAt": 1781030457282,
+      "enabledMcps": 50,
       "tokens": null
     }
   ]
