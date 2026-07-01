@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782857473511,
-  "sessionCount": 67,
+  "generatedAt": 1782886742173,
+  "sessionCount": 68,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-opus-4-8": 26,
+    "claude-opus-4-8": 27,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "unknown": 1
@@ -52,12 +52,12 @@
       "id": "tino",
       "name": "Tino Superapp",
       "company": "Teso / SkyWhale",
-      "sessions": 7,
+      "sessions": 8,
       "models": {
         "claude-opus-4-8[1m]": 5,
-        "claude-opus-4-8": 2
+        "claude-opus-4-8": 3
       },
-      "lastActivity": 1782189770017,
+      "lastActivity": 1782880121840,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +157,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_5ec8a30c-6200-488c-9ce0-271f72be5f91",
+      "title": "Tino Car driver poster",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1782878755455,
+      "lastActivityAt": 1782880121840,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_fa0a7b38-0f25-439a-8abb-e9351d22a50d",
       "title": "Design system validation loop issue",
@@ -792,19 +805,6 @@
       "createdAt": 1781074844116,
       "lastActivityAt": 1781074881328,
       "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_2c46d4c4-f363-4462-b33c-bda214d5c6fc",
-      "title": "Personal financial strategy",
-      "project": "personal",
-      "projectName": "Personal / Other",
-      "company": "—",
-      "model": "claude-fable-5[1m]",
-      "archived": false,
-      "createdAt": 1781030438642,
-      "lastActivityAt": 1781030457282,
-      "enabledMcps": 50,
       "tokens": null
     }
   ]
