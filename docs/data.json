@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782974095801,
-  "sessionCount": 69,
+  "generatedAt": 1782984917606,
+  "sessionCount": 71,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-fable-5": 1,
+    "claude-fable-5": 3,
     "claude-opus-4-8": 27,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
@@ -17,16 +17,16 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 29,
+      "sessions": 30,
       "models": {
-        "claude-fable-5": 1,
+        "claude-fable-5": 2,
         "claude-opus-4-8": 12,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782960404682,
+      "lastActivity": 1782977214115,
       "tokens": {
         "input": 0,
         "output": 0
@@ -100,14 +100,15 @@
       "id": "mmf",
       "name": "Money Market Fund",
       "company": "Мони Маркет Фанд",
-      "sessions": 4,
+      "sessions": 5,
       "models": {
         "claude-opus-4-8[1m]": 1,
+        "claude-fable-5": 1,
         "claude-opus-4-7": 1,
         "claude-opus-4-8": 1,
         "unknown": 1
       },
-      "lastActivity": 1782283477182,
+      "lastActivity": 1782984388263,
       "tokens": {
         "input": 0,
         "output": 0
@@ -160,6 +161,19 @@
   ],
   "sessions": [
     {
+      "id": "local_ab074e2f-b6ad-47bd-8a99-db1c8285b93c",
+      "title": "Money Market Fund web app redesign",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1782984304389,
+      "lastActivityAt": 1782984388263,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_1cc13965-ff4c-440d-a432-7e3ff2213beb",
       "title": "DA CL workflow optimization",
       "project": "other",
@@ -168,7 +182,20 @@
       "model": "claude-fable-5",
       "archived": false,
       "createdAt": 1782960190212,
-      "lastActivityAt": 1782960404682,
+      "lastActivityAt": 1782977214115,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_1320386e-a55f-4643-a3f5-ad1c790f8df9",
+      "title": "Portfolio and personal branding strategy",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1782976026174,
+      "lastActivityAt": 1782976365086,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -780,32 +807,6 @@
       "archived": false,
       "createdAt": 1781111031434,
       "lastActivityAt": 1781161908618,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_5dca04ab-d9e0-4e07-be12-00297e87fd3f",
-      "title": "Design-to-Figma pipeline system",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-fable-5[1m]",
-      "archived": false,
-      "createdAt": 1781101945166,
-      "lastActivityAt": 1781157584212,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_0d156fe4-67be-4bb5-a370-6fbc74b0b37c",
-      "title": "Claude Design to Figma migration",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781081265946,
-      "lastActivityAt": 1781098808688,
       "enabledMcps": 20,
       "tokens": null
     }
