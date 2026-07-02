@@ -1,11 +1,12 @@
 {
-  "generatedAt": 1782923612467,
-  "sessionCount": 68,
+  "generatedAt": 1782966475395,
+  "sessionCount": 69,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
+    "claude-fable-5": 1,
     "claude-opus-4-8": 27,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
@@ -16,15 +17,16 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 28,
+      "sessions": 29,
       "models": {
+        "claude-fable-5": 1,
         "claude-opus-4-8": 12,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782738545538,
+      "lastActivity": 1782960404682,
       "tokens": {
         "input": 0,
         "output": 0
@@ -157,6 +159,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_1cc13965-ff4c-440d-a432-7e3ff2213beb",
+      "title": "DA CL workflow optimization",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1782960190212,
+      "lastActivityAt": 1782960404682,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_5ec8a30c-6200-488c-9ce0-271f72be5f91",
       "title": "Tino Car driver poster",
@@ -791,19 +806,6 @@
       "archived": false,
       "createdAt": 1781081265946,
       "lastActivityAt": 1781098808688,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_eb2710a6-f356-423c-bf0c-f2689ee97e86",
-      "title": "Medication schedule with work",
-      "project": "personal",
-      "projectName": "Personal / Other",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781074844116,
-      "lastActivityAt": 1781074881328,
       "enabledMcps": 20,
       "tokens": null
     }
