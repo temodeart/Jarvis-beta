@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1782984917606,
-  "sessionCount": 71,
+  "generatedAt": 1782995738147,
+  "sessionCount": 72,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-fable-5": 3,
+    "claude-fable-5": 4,
     "claude-opus-4-8": 27,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
@@ -17,16 +17,16 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 30,
+      "sessions": 31,
       "models": {
-        "claude-fable-5": 2,
+        "claude-fable-5": 3,
         "claude-opus-4-8": 12,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782977214115,
+      "lastActivity": 1782992087911,
       "tokens": {
         "input": 0,
         "output": 0
@@ -108,7 +108,7 @@
         "claude-opus-4-8": 1,
         "unknown": 1
       },
-      "lastActivity": 1782984388263,
+      "lastActivity": 1782992997758,
       "tokens": {
         "input": 0,
         "output": 0
@@ -169,7 +169,20 @@
       "model": "claude-fable-5",
       "archived": false,
       "createdAt": 1782984304389,
-      "lastActivityAt": 1782984388263,
+      "lastActivityAt": 1782992997758,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_70ffca7e-bb30-4b0b-ab62-318bd59d0ef3",
+      "title": "Storage cleanup",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1782991192240,
+      "lastActivityAt": 1782992087911,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -794,19 +807,6 @@
       "archived": false,
       "createdAt": 1781160299548,
       "lastActivityAt": 1781163780399,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_1f430c6f-502f-4e4e-88be-d50d72a6f276",
-      "title": "Bundle at exports",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781111031434,
-      "lastActivityAt": 1781161908618,
       "enabledMcps": 20,
       "tokens": null
     }
