@@ -1,5 +1,5 @@
 {
-  "generatedAt": 1783056969581,
+  "generatedAt": 1783067790168,
   "sessionCount": 75,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
@@ -28,7 +28,7 @@
         "claude-sonnet-5": 1,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1783055833478,
+      "lastActivity": 1783066546270,
       "tokens": {
         "input": 0,
         "output": 0
@@ -164,6 +164,19 @@
   ],
   "sessions": [
     {
+      "id": "local_d82da3f8-dcb3-400a-8016-7a9bb4d26dd9",
+      "title": "DA design system prompt",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1783055758495,
+      "lastActivityAt": 1783066546270,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_ab074e2f-b6ad-47bd-8a99-db1c8285b93c",
       "title": "Money Market Fund web app redesign",
       "project": "mmf",
@@ -173,19 +186,6 @@
       "archived": false,
       "createdAt": 1782984304389,
       "lastActivityAt": 1783056218027,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_d82da3f8-dcb3-400a-8016-7a9bb4d26dd9",
-      "title": "DA design system prompt",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-fable-5",
-      "archived": false,
-      "createdAt": 1783055758495,
-      "lastActivityAt": 1783055833478,
       "enabledMcps": 73,
       "tokens": null
     },
