@@ -1,15 +1,16 @@
 {
-  "generatedAt": 1783008682217,
-  "sessionCount": 72,
+  "generatedAt": 1783056969581,
+  "sessionCount": 75,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-fable-5": 4,
+    "claude-fable-5": 5,
     "claude-opus-4-8": 27,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
+    "claude-sonnet-5": 2,
     "unknown": 1
   },
   "projects": [
@@ -17,16 +18,17 @@
       "id": "other",
       "name": "Unsorted",
       "company": "—",
-      "sessions": 31,
+      "sessions": 33,
       "models": {
-        "claude-fable-5": 3,
+        "claude-fable-5": 4,
         "claude-opus-4-8": 12,
         "claude-sonnet-4-6": 2,
         "claude-opus-4-8[1m]": 11,
         "claude-opus-4-7": 2,
+        "claude-sonnet-5": 1,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1782992087911,
+      "lastActivity": 1783055833478,
       "tokens": {
         "input": 0,
         "output": 0
@@ -54,12 +56,13 @@
       "id": "tino",
       "name": "Tino Superapp",
       "company": "Teso / SkyWhale",
-      "sessions": 8,
+      "sessions": 9,
       "models": {
         "claude-opus-4-8[1m]": 5,
-        "claude-opus-4-8": 3
+        "claude-opus-4-8": 3,
+        "claude-sonnet-5": 1
       },
-      "lastActivity": 1782880121840,
+      "lastActivity": 1783055320824,
       "tokens": {
         "input": 0,
         "output": 0
@@ -108,7 +111,7 @@
         "claude-opus-4-8": 1,
         "unknown": 1
       },
-      "lastActivity": 1783003840920,
+      "lastActivity": 1783056218027,
       "tokens": {
         "input": 0,
         "output": 0
@@ -169,7 +172,46 @@
       "model": "claude-fable-5",
       "archived": false,
       "createdAt": 1782984304389,
-      "lastActivityAt": 1783003840920,
+      "lastActivityAt": 1783056218027,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_d82da3f8-dcb3-400a-8016-7a9bb4d26dd9",
+      "title": "DA design system prompt",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1783055758495,
+      "lastActivityAt": 1783055833478,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_ecc09835-f65f-4998-9395-c8f1ac14e1a0",
+      "title": "Tino design requirements",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-sonnet-5",
+      "archived": false,
+      "createdAt": 1783054085899,
+      "lastActivityAt": 1783055320824,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_326d659f-7a49-4e3c-92e1-559e34c7b808",
+      "title": "Claude app audit methods",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-sonnet-5",
+      "archived": false,
+      "createdAt": 1783053724079,
+      "lastActivityAt": 1783053914404,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -769,45 +811,6 @@
       "createdAt": 1781442976819,
       "lastActivityAt": 1781484891281,
       "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_1430705d-f02d-4a38-81e4-842725ae9f6d",
-      "title": "Update tasks organization",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781356200097,
-      "lastActivityAt": 1781356263004,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_c51f0b3f-d791-4b61-81f0-e40e7656926c",
-      "title": "Parts and service UX improvements",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-fable-5[1m]",
-      "archived": false,
-      "createdAt": 1781166609159,
-      "lastActivityAt": 1781167755292,
-      "enabledMcps": 20,
-      "tokens": null
-    },
-    {
-      "id": "local_aa467c3d-99ef-4ca4-83aa-999eaa058d64",
-      "title": "Bundle at exports",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781160299548,
-      "lastActivityAt": 1781163780399,
-      "enabledMcps": 20,
       "tokens": null
     }
   ]
