@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1783389235835,
-  "sessionCount": 75,
+  "generatedAt": 1783418451575,
+  "sessionCount": 77,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
     "claude-fable-5": 5,
-    "claude-opus-4-8": 27,
+    "claude-opus-4-8": 29,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "claude-sonnet-5": 2,
@@ -56,13 +56,13 @@
       "id": "tino",
       "name": "Tino Superapp",
       "company": "Teso / SkyWhale",
-      "sessions": 9,
+      "sessions": 11,
       "models": {
         "claude-opus-4-8[1m]": 5,
-        "claude-opus-4-8": 3,
+        "claude-opus-4-8": 5,
         "claude-sonnet-5": 1
       },
-      "lastActivity": 1783055320824,
+      "lastActivity": 1783398330834,
       "tokens": {
         "input": 0,
         "output": 0
@@ -163,6 +163,32 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_c10607b6-44b0-4e3d-a5a2-fa3ddc86f02a",
+      "title": "Tino app store preview screens",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1783396913842,
+      "lastActivityAt": 1783398330834,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_a908de98-133c-4d02-9d5c-fa06c9b0e5b4",
+      "title": "Tino driver app splash screen",
+      "project": "tino",
+      "projectName": "Tino Superapp",
+      "company": "Teso / SkyWhale",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1783393083542,
+      "lastActivityAt": 1783395777242,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_d82da3f8-dcb3-400a-8016-7a9bb4d26dd9",
       "title": "DA design system prompt",
@@ -785,32 +811,6 @@
       "createdAt": 1781599257318,
       "lastActivityAt": 1781599511997,
       "enabledMcps": 21,
-      "tokens": null
-    },
-    {
-      "id": "local_f583ec67-1df0-44a4-a7f0-96bc7e40688f",
-      "title": "Bundle deployment and testing website",
-      "project": "skills",
-      "projectName": "Skill / Pipeline dev",
-      "company": "internal",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781521419749,
-      "lastActivityAt": 1781527839772,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_8a9121d1-36ff-4100-b825-f26be6690ddf",
-      "title": "Money Market Fund theme and skill",
-      "project": "mmf",
-      "projectName": "Money Market Fund",
-      "company": "Мони Маркет Фанд",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781442976819,
-      "lastActivityAt": 1781484891281,
-      "enabledMcps": 73,
       "tokens": null
     }
   ]
