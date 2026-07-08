@@ -1,13 +1,13 @@
 {
-  "generatedAt": 1783488788687,
-  "sessionCount": 77,
+  "generatedAt": 1783499623249,
+  "sessionCount": 78,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
     "claude-fable-5": 5,
-    "claude-opus-4-8": 29,
+    "claude-opus-4-8": 30,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
     "claude-sonnet-5": 2,
@@ -72,12 +72,12 @@
       "id": "marketing",
       "name": "Marketing / Posters",
       "company": "cross-project",
-      "sessions": 6,
+      "sessions": 7,
       "models": {
-        "claude-opus-4-8": 4,
+        "claude-opus-4-8": 5,
         "claude-opus-4-8[1m]": 2
       },
-      "lastActivity": 1782439631205,
+      "lastActivity": 1783498110770,
       "tokens": {
         "input": 0,
         "output": 0
@@ -163,6 +163,19 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_cd8c87b9-daa4-400d-9d19-8a4ff50c4c6e",
+      "title": "Poster board orders",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-opus-4-8",
+      "archived": false,
+      "createdAt": 1783496813033,
+      "lastActivityAt": 1783498110770,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_c10607b6-44b0-4e3d-a5a2-fa3ddc86f02a",
       "title": "Tino app store preview screens",
@@ -798,19 +811,6 @@
       "createdAt": 1781505193214,
       "lastActivityAt": 1781599646983,
       "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_62f1a550-a431-42fb-8708-a71fad0d6eb3",
-      "title": "Media kit folder structure",
-      "project": "marketing",
-      "projectName": "Marketing / Posters",
-      "company": "cross-project",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781599257318,
-      "lastActivityAt": 1781599511997,
-      "enabledMcps": 21,
       "tokens": null
     }
   ]
