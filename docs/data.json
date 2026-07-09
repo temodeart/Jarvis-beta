@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1783576034589,
-  "sessionCount": 79,
+  "generatedAt": 1783586861466,
+  "sessionCount": 81,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-fable-5": 6,
+    "claude-fable-5": 8,
     "claude-opus-4-8": 30,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
@@ -28,7 +28,7 @@
         "claude-sonnet-5": 1,
         "claude-fable-5[1m]": 1
       },
-      "lastActivity": 1783312843078,
+      "lastActivity": 1783579507853,
       "tokens": {
         "input": 0,
         "output": 0
@@ -85,6 +85,24 @@
       }
     },
     {
+      "id": "mmf",
+      "name": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "sessions": 7,
+      "models": {
+        "claude-opus-4-8[1m]": 1,
+        "claude-fable-5": 3,
+        "claude-opus-4-7": 1,
+        "claude-opus-4-8": 1,
+        "unknown": 1
+      },
+      "lastActivity": 1783582430703,
+      "tokens": {
+        "input": 0,
+        "output": 0
+      }
+    },
+    {
       "id": "personal",
       "name": "Personal / Other",
       "company": "—",
@@ -95,24 +113,6 @@
         "claude-fable-5[1m]": 1
       },
       "lastActivity": 1781074881328,
-      "tokens": {
-        "input": 0,
-        "output": 0
-      }
-    },
-    {
-      "id": "mmf",
-      "name": "Money Market Fund",
-      "company": "Мони Маркет Фанд",
-      "sessions": 5,
-      "models": {
-        "claude-opus-4-8[1m]": 1,
-        "claude-fable-5": 1,
-        "claude-opus-4-7": 1,
-        "claude-opus-4-8": 1,
-        "unknown": 1
-      },
-      "lastActivity": 1783056218027,
       "tokens": {
         "input": 0,
         "output": 0
@@ -164,6 +164,45 @@
     }
   ],
   "sessions": [
+    {
+      "id": "local_53e97f44-fc1f-44e7-ac15-289276ccc890",
+      "title": "Money Market Fund web update",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1783581655167,
+      "lastActivityAt": 1783582430703,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_b6ea70d2-502b-4daa-8e67-e606fc31f782",
+      "title": "MMF landing page structure",
+      "project": "mmf",
+      "projectName": "Money Market Fund",
+      "company": "Мони Маркет Фанд",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1783580101098,
+      "lastActivityAt": 1783580306843,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
+      "id": "local_1cc13965-ff4c-440d-a432-7e3ff2213beb",
+      "title": "DA CL workflow optimization",
+      "project": "other",
+      "projectName": "Unsorted",
+      "company": "—",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1782960190212,
+      "lastActivityAt": 1783579507853,
+      "enabledMcps": 73,
+      "tokens": null
+    },
     {
       "id": "local_4856f49d-dbdb-4864-bcef-668915dcaf7e",
       "title": "Poster orders",
@@ -278,19 +317,6 @@
       "archived": false,
       "createdAt": 1782991192240,
       "lastActivityAt": 1782992087911,
-      "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_1cc13965-ff4c-440d-a432-7e3ff2213beb",
-      "title": "DA CL workflow optimization",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-fable-5",
-      "archived": false,
-      "createdAt": 1782960190212,
-      "lastActivityAt": 1782977214115,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -786,32 +812,6 @@
       "createdAt": 1781746051478,
       "lastActivityAt": 1781751814379,
       "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_9be699b6-9dc1-41dc-95b5-394e86beecca",
-      "title": "Sync task board",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781741312516,
-      "lastActivityAt": 1781745541896,
-      "enabledMcps": 50,
-      "tokens": null
-    },
-    {
-      "id": "local_7e07c663-5977-43fc-82cd-5c1964aac4b5",
-      "title": "AI workflow and monitoring hub",
-      "project": "other",
-      "projectName": "Unsorted",
-      "company": "—",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781691193764,
-      "lastActivityAt": 1781704436346,
-      "enabledMcps": 73,
       "tokens": null
     }
   ]
