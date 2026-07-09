@@ -1,12 +1,12 @@
 {
-  "generatedAt": 1783510447503,
-  "sessionCount": 78,
+  "generatedAt": 1783565209506,
+  "sessionCount": 79,
   "tokensAvailable": true,
   "tokensNote": "Real token counts recovered from Claude Code transcripts.",
   "byModel": {
     "claude-sonnet-4-6": 6,
     "claude-opus-4-8[1m]": 27,
-    "claude-fable-5": 5,
+    "claude-fable-5": 6,
     "claude-opus-4-8": 30,
     "claude-opus-4-7": 4,
     "claude-fable-5[1m]": 3,
@@ -72,12 +72,13 @@
       "id": "marketing",
       "name": "Marketing / Posters",
       "company": "cross-project",
-      "sessions": 7,
+      "sessions": 8,
       "models": {
         "claude-opus-4-8": 5,
-        "claude-opus-4-8[1m]": 2
+        "claude-opus-4-8[1m]": 2,
+        "claude-fable-5": 1
       },
-      "lastActivity": 1783509835300,
+      "lastActivity": 1783564775114,
       "tokens": {
         "input": 0,
         "output": 0
@@ -164,6 +165,19 @@
   ],
   "sessions": [
     {
+      "id": "local_4856f49d-dbdb-4864-bcef-668915dcaf7e",
+      "title": "Poster orders",
+      "project": "marketing",
+      "projectName": "Marketing / Posters",
+      "company": "cross-project",
+      "model": "claude-fable-5",
+      "archived": false,
+      "createdAt": 1783564223400,
+      "lastActivityAt": 1783564775114,
+      "enabledMcps": 73,
+      "tokens": null
+    },
+    {
       "id": "local_cd8c87b9-daa4-400d-9d19-8a4ff50c4c6e",
       "title": "Poster board orders",
       "project": "marketing",
@@ -172,7 +186,7 @@
       "model": "claude-opus-4-8",
       "archived": false,
       "createdAt": 1783496813033,
-      "lastActivityAt": 1783509835300,
+      "lastActivityAt": 1783514672950,
       "enabledMcps": 73,
       "tokens": null
     },
@@ -798,19 +812,6 @@
       "createdAt": 1781691193764,
       "lastActivityAt": 1781704436346,
       "enabledMcps": 73,
-      "tokens": null
-    },
-    {
-      "id": "local_69b7cf12-aff8-4fc9-abb3-1683a078eabe",
-      "title": "Tino AI workflow setup",
-      "project": "tino",
-      "projectName": "Tino Superapp",
-      "company": "Teso / SkyWhale",
-      "model": "claude-opus-4-8[1m]",
-      "archived": false,
-      "createdAt": 1781505193214,
-      "lastActivityAt": 1781599646983,
-      "enabledMcps": 50,
       "tokens": null
     }
   ]
